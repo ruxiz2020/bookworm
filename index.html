@@ -14,6 +14,7 @@
 
   <script src="js/chartjs/Chart.min.js"></script>
   <script src="js/dashboard.js"></script>
+
 </head>
 
 <body>
@@ -21,20 +22,20 @@
     <div class="logo">
       <div class="img">
         <span class="logo-text">Bookworm</span>
-        <span class="logo-text minbar"  style="margin-top: 1.5rem"><i class="fa fa-book"></i></span>
+        <span class="logo-text minbar" style="margin-top: 1.3rem"><i class="fa fa-book"></i></span>
       </div>
     </div>
     <div class="topbar">
       <div class="left">
         <a class="navbar-collopse"> <i class="fa fa-bars" style="font-size:24px"></i> </a>
-          <span style="color:#4682B4;" class="topbar-title">Read </span>
-          <span style="color:#FFB6C1;" class="topbar-title">Write</span>
-          <span style="color:#DEB887;" class="topbar-title">Enjoy</span>
-          <span style="color:#FF8C00;" class="topbar-title">Think</span>
-          <span style="color:#8FBC8F;" class="topbar-title">Create</span>
-          <span style="color:#708090;" class="topbar-title">Share</span>
-          <span style="color:#FF6347;" class="topbar-title">Meet</span>
-          <span style="color:#8B4513;" class="topbar-title">Inspire</span>
+        <span style="color:#4682B4;" class="topbar-title">Read </span>
+        <span style="color:#FFB6C1;" class="topbar-title">Write</span>
+        <span style="color:#DEB887;" class="topbar-title">Enjoy</span>
+        <span style="color:#FF8C00;" class="topbar-title">Think</span>
+        <span style="color:#8FBC8F;" class="topbar-title">Create</span>
+        <span style="color:#708090;" class="topbar-title">Share</span>
+        <span style="color:#FF6347;" class="topbar-title">Meet</span>
+        <span style="color:#8B4513;" class="topbar-title">Inspire</span>
       </div>
       <div class="right">
         <span class="">
@@ -51,18 +52,18 @@
               </a>
             </li>
             <li>
-              <a href="#">
-                Profile
+              <a href="profile.html">
+                PROFILE
               </a>
             </li>
             <li>
               <a href="#">
-                Settings
+                SETTINGS
               </a>
             </li>
             <li class="dropdown-footer">
               <a href="#">
-                Logout
+                LOGOUT
               </a>
             </li>
           </ul>
@@ -70,32 +71,44 @@
       </div>
     </div>
   </header>
+
+
   <div class="main">
     <aside>
       <nav>
         <ul class="nav">
           <li class="active">
             <a href="index.html">
-              <i class="fa fa-dashboard" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">Dashbaord</span>
+              <i class="fa fa-home" style="font-size:24px"></i>
+              <span class="span" style="font-size:20px">HOME</span>
             </a>
           </li>
+
           <li>
-            <a href="#">
-              <i class="fa fa-user" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">Profile</span>
+            <a href="blog.html">
+              <i class="fa fa-comments-o" style="font-size:24px"></i>
+              <span class="span" style="font-size:20px">BLOGS</span>
             </a>
           </li>
+
+          <li>
+            <a href="profile.html">
+              <i class="fa fa-user" style="font-size:24px"></i>
+              <span class="span" style="font-size:20px">PROFILE</span>
+            </a>
+          </li>
+
           <li>
             <a href="table.html">
               <i class="fa fa-users" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">Users</span>
+              <span class="span" style="font-size:20px">USERS</span>
             </a>
           </li>
+
           <li class="dropdown">
             <a href="#">
               <i class="fa fa-cog" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">Settings</span>
+              <span class="span" style="font-size:20px">SETTINGS</span>
               <span class="arrow">
                 <i class="fa fa-angle-down"></i>
               </span>
@@ -121,39 +134,12 @@
               </li>
             </ul>
           </li>
-          <li class="dropdown">
-            <a href="#">
-              <i class="fa fa-cog" style="font-size:24px"></i>
-              <span class="span"  style="font-size:20px">Settings</span>
-              <span class="arrow">
-                <i class="fa fa-angle-down"></i>
-              </span>
-            </a>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fa fa-angle-right"></i>
-                  <span class="span">Configuration</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-angle-right"></i>
-                  <span class="span">Users</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-angle-right"></i>
-                  <span class="span">Profile</span>
-                </a>
-              </li>
-            </ul>
-          </li>
+
         </ul>
+
       </nav>
       <div class="nav-footer">
-        <a href="#" class="btn btn-sm">
+        <a href="#" class="btn btn-sm" style="font-size:20px; color:white;">
           <i class="fa fa-sign-out"></i>
         </a>
       </div>
@@ -161,101 +147,271 @@
 
 
     <div class="page-container">
-
+      <!--
     <div id="bannerimage" style="background-image: url('image/banner.jpg'); opacity: 0.7;">
     </div>
-      <br >
-      <h1>Currently Popular</h1>
-      <div class="row">
-      <div class="col-md-3">
-
-        <!-- Each image is 350px by 233px -->
-        <div id="fadein" class="photobanner card-body ">
-
-          <img class="first card-books" src="image/cover1.jpg">
-          <img class="card-books" src="image/cover2.jpg">
-          <img class="card-books" src="image/cover3.jpg">
-          <img class="card-books" src="image/cover4.jpg">
-          <img class="card-books" src="image/cover5.jpg">
-          <img class="card-books" src="image/cover6.jpg">
-          <img class="card-books" src="image/cover7.jpg">
-          <img class="card-books" src="image/cover8.jpg">
-          <img class="card-books" src="image/cover9.jpg">
-        </div>
+    -->
+      <div class="container-title">
+        <h1>Currently Popular</h1>
       </div>
-      </div>
-      <br >
-      <h1>Forum</h1>
       <div class="row">
         <div class="col-md-3">
-          <div class="card-body section">
-            <div class="image-txt-container">
-              <img class="image-box" src="image/icon/fiction.png" width="100" height="100">
-              <div class="txt-container">
-                <h3 class="text-box">
-                  BOOKS: FICTION
-                </h3>
-                 <div class="tiny-box">Mystery </div>
-                 <div class="tiny-box">Historical</div>
-                 <div class="tiny-box">Sci-Fi</div>
-                 <div class="tiny-box">Fantasy</div>
-                 <div class="tiny-box">Romance</div>
+
+          <!-- Each image is 350px by 233px -->
+          <div id="fadein" class="photobanner card-body ">
+
+            <img class="first card-books" src="image/cover1.jpg">
+            <img class="card-books" src="image/cover2.jpg">
+            <img class="card-books" src="image/cover3.jpg">
+            <img class="card-books" src="image/cover4.jpg">
+            <img class="card-books" src="image/cover5.jpg">
+            <img class="card-books" src="image/cover6.jpg">
+            <img class="card-books" src="image/cover7.jpg">
+            <img class="card-books" src="image/cover8.jpg">
+            <img class="card-books" src="image/cover9.jpg">
+            <img class="card-books" src="image/cover10.jpg">
+            <img class="card-books" src="image/cover1.jpg">
+          </div>
+        </div>
+      </div>
+      <br>
+
+      </section>
+
+      <div class="container-title">
+        <h1>Today's Highlights</h1>
+      </div>
+      <div class="container txt-area post-preview">
+        <a href="blog.html#post_2">
+          <h2>Man's Search for Meaning</h2>
+          <blockquote>
+            <p style="font-size: 18px;">
+              Everything can be taken from a man but one thing: the last of the human freedoms -
+              to choose one's attitude in any given set of circumstances, to choose one's own way
+              A man who let himself decline because he could not see any future goal found himself
+              occupied with retrospective thoughts.
+            </p>
+          </blockquote>
+        </a>
+      </div>
+
+      <div class="container-title">
+        <h1>Forum</h1>
+      </div>
+      <div id="section ">
+
+        <div class="new-container">
+
+          <div class="features feature-box">
+
+            <div class="col-md-4 ">
+              <div class="media service-box">
+                <div class="pull-left">
+                  <i class="fa fa-leanpub"></i>
                 </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card-body section">
-            <div class="image-txt-container">
-              <img class="image-box" src="image/icon/non-fiction.png" width="100" height="100">
-              <div class="txt-container">
+
                 <h3 class="text-box">
-                  BOOKS: NON-FICTION
+                  FICTION
                 </h3>
-                <div class="tiny-box">Memoirs</div>
-                <div class="tiny-box">Science</div>
-                <div class="tiny-box">History</div>
-                <div class="tiny-box">Chemistry</div>
-                <div class="tiny-box">Physics</div>
+                <div class="tiny-box">
+                  <pre><a class="hash-text" href="#">Crime</a>  <a class="hash-text" href="#">Fantasy</a>  <a class="hash-text" href="#">Romance</a>  <a class="hash-text" href="#">Drama</a></pre>
+                </div>
+                <div class="tiny-box">
+                  <pre><a class="hash-text" href="#">Sci-Fi</a>  <a class="hash-text" href="#">Inspirational</a>  <a class="hash-text" href="#">Horror</a>  <a class="hash-text" href="#">Poetry</a></pre>
+                </div>
+                <div class="tiny-box">
+                  <pre><a class="hash-text" href="#">Young adult</a>  <a class="hash-text" href="#">New adult</a>  <a class="hash-text" href="#">Children's</a></pre>
+                </div>
+
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card-body section">
-            <div class="image-txt-container">
-              <img class="image-box" src="image/icon/popular.png" width="100" height="100">
-              <div class="txt-container">
+            <!--/.col-md-4-->
+
+            <div class="col-md-4 ">
+              <div class="media service-box">
                 <h3 class="text-box">
-                  BOOKS: POPULAR
+                  NONFICTION
                 </h3>
-                <div class="tiny-box">Year's Best Sci-Fi</div>
-                <div class="tiny-box">Parable</div>
-                <div class="tiny-box">National Book Award</div>
-                <div class="tiny-box">Man Booker Prize</div>
-                <div class="tiny-box">Eisner Award</div>
+                <div class="tiny-box">
+                  <pre><a class="hash-text" href="#">Non-Romantic</a>  <a class="hash-text" href="#">Horror</a>  <a class="hash-text" href="#">Comedy</a>  <a class="hash-text" href="#">Drama</a></pre>
+                </div>
+                <div class="tiny-box">
+                  <pre><a class="hash-text" href="#">Humor</a>  <a class="hash-text" href="#">Mystery</a>  <a class="hash-text" href="#">Sci-Fi</a>  <a class="hash-text" href="#">Musical</a></pre>
+                </div>
+                <div class="tiny-box">
+                  <pre><a class="hash-text" href="#">Romantic</a>  <a class="hash-text" href="#">Action</a>  <a class="hash-text" href="#">Anomation</a>  <a class="hash-text" href="#">Fantasy</a></pre>
+                </div>
+
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card-body section">
-            <div class="image-txt-container">
-              <img class="image-box" src="image/icon/movie.png" width="100" height="100">
-              <div class="txt-container">
+            <!--/.col-md-4-->
+
+            <div class="col-md-4 ">
+              <div class="media service-box">
+                <h3 class="text-box">
+                  POPULAR
+                </h3>
+                <div class="tiny-box">
+                  <pre><i class="fa fa-star" style="margin-right:12px;"></i><a class="hash-text" href="#">Jojo Rabbit</a></pre>
+                </div>
+                <div class="tiny-box">
+                  <pre><i class="fa fa-star" style="margin-right:12px;"></i><a class="hash-text" href="#">10 Best Raw Veggie Recipes.</a></pre>
+                </div>
+                <div class="tiny-box">
+                  <pre><i class="fa fa-star" style="margin-right:12px;"></i><a class="hash-text" href="#">Brihadiswara Temple.</a></pre>
+                </div>
+
+              </div>
+            </div>
+            <!--/.col-md-4-->
+
+            <div class="col-md-4 ">
+              <div class="media service-box">
                 <h3 class="text-box">
                   MOVIES
                 </h3>
-                <div class="tiny-box">Non-Romantic</div>
-                <div class="tiny-box">Horror</div>
-                <div class="tiny-box">Humor</div>
-                <div class="tiny-box">Mystery</div>
-                <div class="tiny-box">Romantic</div>
+                <div class="tiny-box">
+                  <pre><a class="hash-text" href="#">Non-Romantic</a>  <a class="hash-text" href="#">Horror</a>  <a class="hash-text" href="#">Comedy</a>  <a class="hash-text" href="#">Drama</a></pre>
+                </div>
+                <div class="tiny-box">
+                  <pre><a class="hash-text" href="#">Humor</a>  <a class="hash-text" href="#">Mystery</a>  <a class="hash-text" href="#">Sci-Fi</a>  <a class="hash-text" href="#">Musical</a></pre>
+                </div>
+                <div class="tiny-box">
+                  <pre><a class="hash-text" href="#">Romantic</a>  <a class="hash-text" href="#">Action</a>  <a class="hash-text" href="#">Anomation</a>  <a class="hash-text" href="#">Fantasy</a></pre>
+                </div>
               </div>
             </div>
+            <!--/.col-md-4-->
+
+            <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="400ms" style="visibility: visible; -webkit-animation-duration: 300ms; -webkit-animation-delay: 400ms;">
+              <div class="media service-box">
+                <h3 class="text-box">
+                  MUSIC
+                </h3>
+                <div class="tiny-box">
+                  <pre><a class="hash-text" href="#">Rock</a>  <a class="hash-text" href="#">Hip Hop</a>  <a class="hash-text" href="#">Pop</a>  <a class="hash-text" href="#">Jazz</a>  <a class="hash-text" href="#">Pop Rock</a></pre>
+                </div>
+                <div class="tiny-box">
+                  <pre><a class="hash-text" href="#">Folk</a>  <a class="hash-text" href="#">Blues</a>  <a class="hash-text" href="#">Musical Theater</a>  <a class="hash-text" href="#">Classic</a></pre>
+                </div>
+                <div class="tiny-box">
+                  <pre><a class="hash-text" href="#">Electronic</a>  <a class="hash-text" href="#">Disco</a>  <a class="hash-text" href="#">Soul</a>  <a class="hash-text" href="#">Country</a></pre>
+                </div>
+
+              </div>
+            </div>
+            <!--/.col-md-4-->
+
+            <div class="col-md-4 col-sm-6 wow fadeInUp animated" data-wow-duration="300ms" data-wow-delay="500ms" style="visibility: visible; -webkit-animation-duration: 300ms; -webkit-animation-delay: 500ms;">
+              <div class="media service-box">
+                <h3 class="text-box">
+                  Blog
+                </h3>
+                <div class="tiny-box">
+                  <pre><i class="fa fa-comments" style="margin-right:12px;"></i><a class="hash-text" href="blog.html#post_1">How to Plant a Succulent?</a></pre>
+                </div>
+                <div class="tiny-box">
+                  <pre><i class="fa fa-comments" style="margin-right:12px;"></i><a class="hash-text" href="#">From Physics to Science Fiction.</a></pre>
+                </div>
+                <div class="tiny-box">
+                  <pre><i class="fa fa-comments" style="margin-right:12px;"></i><a class="hash-text" href="#">Love in the Time of Cholera.</a></pre>
+                </div>
+              </div>
+            </div>
+            <!--/.col-md-4-->
           </div>
+
+
         </div>
       </div>
+
+      <div class="container-title">
+        <h1>Hot Topics</h1>
+      </div>
+
+      <div class="bannerimage">
+
+        <section class="container-forum-summary forum-summary">
+          <div class="row ">
+
+            <div class="col-md-3">
+
+              <span class="title-box_primary" style="font-size:26px;">Book Review</span>
+              <div class="list styled custom-list">
+                <br>
+                <ul>
+                  <li><a href="#">Mathematics and Computer Science</a></li>
+                  <li><a href="#">Mathematics and Philosophy</a></li>
+                  <li><a href="#">Philosophy and Modern Languages</a></li>
+                  <li><a href="#">History (Ancient and Modern)</a></li>
+                  <li><a href="#">Classical Archaeology and Ancient History</a></li>
+                  <li><a href="#">Physics and Philosophy</a></li>
+                </ul>
+                <br>
+                <a href="#" title="read more" class="btn-inline " target="_self">read more</a>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <span class="span" style="font-size:26px">Movie Review</span>
+
+              <div class="list styled custom-list">
+                <br>
+                <ul>
+                  <li><a href="#">Mathematics and Computer Science</a></li>
+                  <li><a href="#">Mathematics and Philosophy</a></li>
+                  <li><a href="#">Philosophy and Modern Languages</a></li>
+                  <li><a href="#">History (Ancient and Modern)</a></li>
+                  <li><a href="#">Classical Archaeology and Ancient History</a></li>
+                  <li><a href="#">Physics and Philosophy</a></li>
+                </ul>
+                <br>
+                <a href="#" title="read more" class="btn-inline " target="_self">read more</a>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <span class="span" style="font-size:26px">Music Album Review</span>
+
+              <div class="list styled custom-list">
+                <br>
+                <ul>
+                  <li><a href="#">Mathematics and Computer Science</a></li>
+                  <li><a href="#">Mathematics and Philosophy</a></li>
+                  <li><a href="#">Philosophy and Modern Languages</a></li>
+                  <li><a href="#">History (Ancient and Modern)</a></li>
+                  <li><a href="#">Classical Archaeology and Ancient History</a></li>
+                  <li><a href="#">Physics and Philosophy</a></li>
+                </ul>
+                <br>
+                <a href="#" title="read more" class="btn-inline " target="_self">read more</a>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <span class="span" style="font-size:26px">Blogs</span>
+
+              <div class="list styled custom-list">
+                <br>
+                <ul>
+                  <li><a href="#">Mathematics and Computer Science</a></li>
+                  <li><a href="#">Mathematics and Philosophy</a></li>
+                  <li><a href="#">Philosophy and Modern Languages</a></li>
+                  <li><a href="#">History (Ancient and Modern)</a></li>
+                  <li><a href="#">Classical Archaeology and Ancient History</a></li>
+                  <li><a href="#">Physics and Philosophy</a></li>
+                </ul>
+                <br>
+                <a href="#" title="read more" class="btn-inline " target="_self">read more</a>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+      </div>
+
       <div class="row mt-4">
         <div class="col-md-8">
           <div class="card ">

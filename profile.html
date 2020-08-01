@@ -2,155 +2,144 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Review</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
 
-    <title>FlatUI</title>
-    <meta name="keywords" content="flatui admin template">
-    <meta name="description" content="Free flatui admin template. Download free template flatui admin template at github">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="favicon.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+  <script src="js/chartjs/Chart.min.js"></script>
+  <script src="js/dashboard.js"></script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <div class="img">
-                <span class="logo-text">FlatUI</span>
-                <span class="logo-text minbar">F</span>
-            </div>
+  <header>
+    <div class="logo">
+      <div class="img">
+        <span class="logo-text">Bookworm</span>
+        <span class="logo-text minbar" style="margin-top: 1.3rem"><i class="fa fa-book"></i></span>
+      </div>
+    </div>
+    <div class="topbar">
+      <div class="left">
+        <a class="navbar-collopse"> <i class="fa fa-bars" style="font-size:24px"></i> </a>
+        <span style="color:#4682B4;" class="topbar-title">Read </span>
+        <span style="color:#FFB6C1;" class="topbar-title">Write</span>
+        <span style="color:#DEB887;" class="topbar-title">Enjoy</span>
+        <span style="color:#FF8C00;" class="topbar-title">Think</span>
+        <span style="color:#8FBC8F;" class="topbar-title">Create</span>
+        <span style="color:#708090;" class="topbar-title">Share</span>
+        <span style="color:#FF6347;" class="topbar-title">Meet</span>
+        <span style="color:#8B4513;" class="topbar-title">Inspire</span>
+      </div>
+      <div class="right">
+        <span class="">
+          <i class="fa fa-bell" style="margin-top: 0.8rem"></i>
+        </span>
+        <div class="topbar-btn">
+          <span class="displayname">John Doe
+            <i class="fa fa-angle-down"></i>
+          </span>
+          <ul class="dropdown">
+            <li class="dropdown-username">
+              <a href="#">
+                John Doe
+              </a>
+            </li>
+            <li>
+              <a href="profile.html">
+                PROFILE
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                SETTINGS
+              </a>
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">
+                LOGOUT
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="topbar">
-            <div class="left">
-                <a class="navbar-collopse"> <i class="fa fa-bars"></i> </a>
-                <span class="topbar-title">Profile</span>
-            </div>
-            <div class="right">
-                <span class="">
-                    <i class="fa fa-bell"></i>
-                </span>
-                <div class="topbar-btn">
-                    <span class="displayname">John Doe
-                        <i class="fa fa-angle-down"></i>
-                    </span>
-                    <ul class="dropdown">
-                        <li class="dropdown-username">
-                            <a href="#">
-                                John Doe
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Profile
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Settings
-                            </a>
-                        </li>
-                        <li class="dropdown-footer">
-                            <a href="#">
-                                Logout
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+      </div>
+    </div>
+  </header>
+
     <div class="main">
-        <aside>
-            <nav>
-                <ul class="nav">
-                    <li>
-                        <a href="index.html">
-                            <i class="fa fa-dashboard"></i>
-                            <span class="span">Dashbaord</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="Profile.html">
-                            <i class="fa fa-user"></i>
-                            <span class="span">Profile</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="table.html">
-                            <i class="fa fa-users"></i>
-                            <span class="span">Users</span>
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">
-                            <i class="fa fa-cog"></i>
-                            <span class="span">Settings</span>
-                            <span class="arrow">
-                                <i class="fa fa-angle-down"></i>
-                            </span>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-angle-right"></i>
-                                    <span class="span">Configuration</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-angle-right"></i>
-                                    <span class="span">Users</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-angle-right"></i>
-                                    <span class="span">Profile</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">
-                            <i class="fa fa-cog"></i>
-                            <span class="span">Settings</span>
-                            <span class="arrow">
-                                <i class="fa fa-angle-down"></i>
-                            </span>
-                        </a>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-angle-right"></i>
-                                    <span class="span">Configuration</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-angle-right"></i>
-                                    <span class="span">Users</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-angle-right"></i>
-                                    <span class="span">Profile</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div class="nav-footer">
-                <a href="#" class="btn btn-sm">
-                    <i class="fa fa-sign-out"></i>
+      <aside>
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="index.html">
+                <i class="fa fa-home" style="font-size:24px"></i>
+                <span class="span" style="font-size:20px">HOME</span>
+              </a>
+            </li>
+            <li>
+              <a href="blog.html">
+                <i class="fa fa-comments-o" style="font-size:24px"></i>
+                <span class="span" style="font-size:20px">BLOGS</span>
+              </a>
+            </li>
+
+            <li class="active">
+                <a href="profile.html">
+                  <i class="fa fa-user" style="font-size:24px"></i>
+                  <span class="span" style="font-size:20px">PROFILE</span>
                 </a>
-            </div>
-        </aside>
+            </li>
+
+            <li>
+              <a href="table.html">
+                <i class="fa fa-users" style="font-size:24px"></i>
+                <span class="span" style="font-size:20px">USERS</span>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a href="#">
+                <i class="fa fa-cog" style="font-size:24px"></i>
+                <span class="span" style="font-size:20px">SETTINGS</span>
+                <span class="arrow">
+                  <i class="fa fa-angle-down"></i>
+                </span>
+              </a>
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span class="span" style="font-size:20px">Configuration</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span class="span" style="font-size:20px">Users</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-angle-right"></i>
+                    <span class="span" style="font-size:20px">Profile</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </nav>
+        <div class="nav-footer">
+          <a href="#" class="btn btn-sm" style="font-size:20px; color:white;">
+            <i class="fa fa-sign-out"></i>
+          </a>
+        </div>
+      </aside>
+
         <div class="page-container">
             <div class="row  h-p-100">
                 <div class="col-md-4">
@@ -160,6 +149,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-md-8">
                     <div class="card">
                         <div class="card-body">

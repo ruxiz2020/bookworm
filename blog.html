@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Book Review</title>
+  <link rel="stylesheet" href="css/blog.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.png">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script src="js/chartjs/Chart.min.js"></script>
+  <script src="js/dashboard.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <div class="img">
+        <span class="logo-text">Bookworm</span>
+        <span class="logo-text minbar" style="margin-top: 1.3rem"><i class="fa fa-book"></i></span>
+      </div>
+    </div>
+    <div class="topbar">
+      <div class="left">
+        <a class="navbar-collopse"> <i class="fa fa-bars" style="font-size:24px"></i> </a>
+        <span style="color:#4682B4;" class="topbar-title">Read </span>
+        <span style="color:#FFB6C1;" class="topbar-title">Write</span>
+        <span style="color:#DEB887;" class="topbar-title">Enjoy</span>
+        <span style="color:#FF8C00;" class="topbar-title">Think</span>
+        <span style="color:#8FBC8F;" class="topbar-title">Create</span>
+        <span style="color:#708090;" class="topbar-title">Share</span>
+        <span style="color:#FF6347;" class="topbar-title">Meet</span>
+        <span style="color:#8B4513;" class="topbar-title">Inspire</span>
+      </div>
+      <div class="right">
+        <span class="">
+          <i class="fa fa-bell" style="margin-top: 0.8rem"></i>
+        </span>
+        <div class="topbar-btn">
+          <span class="displayname">John Doe
+            <i class="fa fa-angle-down"></i>
+          </span>
+          <ul class="dropdown">
+            <li class="dropdown-username">
+              <a href="#">
+                John Doe
+              </a>
+            </li>
+            <li>
+              <a href="profile.html">
+                PROFILE
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                SETTINGS
+              </a>
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">
+                LOGOUT
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<div class="main">
+  <aside>
+    <nav>
+      <ul class="nav">
+        <li >
+          <a href="index.html">
+            <i class="fa fa-home" style="font-size:24px"></i>
+            <span class="span" style="font-size:20px">HOME</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="blog.html">
+            <i class="fa fa-comments-o" style="font-size:24px"></i>
+            <span class="span" style="font-size:20px">BLOGS</span>
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <i class="fa fa-user" style="font-size:24px"></i>
+            <span class="span" style="font-size:20px">PROFILE</span>
+          </a>
+        </li>
+        <li>
+          <a href="table.html">
+            <i class="fa fa-users" style="font-size:24px"></i>
+            <span class="span" style="font-size:20px">USERS</span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="#">
+            <i class="fa fa-cog" style="font-size:24px"></i>
+            <span class="span" style="font-size:20px">SETTINGS</span>
+            <span class="arrow">
+              <i class="fa fa-angle-down"></i>
+            </span>
+          </a>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right"></i>
+                <span class="span" style="font-size:20px">Configuration</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right"></i>
+                <span class="span" style="font-size:20px">Users</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-angle-right"></i>
+                <span class="span" style="font-size:20px">Profile</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+    <div class="nav-footer">
+      <a href="#" class="btn btn-sm" style="font-size:20px; color:white;">
+        <i class="fa fa-sign-out"></i>
+      </a>
+    </div>
+  </aside>
+
+    <!-- Page Header , page-container makes page scrollible, and header sticky to the top-->
+  <div class="page-container">
+    <!-- Post Content -->
+    <article>
+        <div class="blog-container">
+            <div class="row">
+                <div class="col-lg-15">
+                  <h1 class="post-title">
+                      How to Plant Succulents in Containers: a Beginner's Guide
+                  </h1>
+                    <p>Spring is just around the corner and I have been getting my gardening supplies ready.
+                      If you’re thinking of making your very first succulent container garden, now is the time to do so.
+                      I will show you how to plant your very first succulent container garden and plenty of
+                      other potting tips right here.
+                    </p>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cK3Qg2mGYAg"
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+                    <p>
+                      When planting a succulent container garden,
+                      it doesn’t take that much planning but you do need to consider
+                      the following things before you go ahead and start planting:
+                    </p>
+
+                    <h2 class="section-heading">The Size of the Pot</h2>
+
+                    <p>Does the size of the pot matter? Yes. Succulents have shallow roots
+                      and do not require very deep pots with a ton of soil to grow. In fact,
+                       succulents prefer a somewhat shallow pot, or just enough soil to encourage
+                       the roots and the plant to spread out.
+
+                    Whether you choose the plant first and then the pot second,
+                    or have the pot first then choose the plants to go in the pot later,
+                    you want the size of the pot to correspond with the size of the plant(s) you are using.
+                    You don’t want the pot to be too large for the plant, but you want to give the plant some room to grow too.
+                    </p>
+
+                    <blockquote>A good rule to follow is to have the pot about 1 or 2 inches large in diameter
+                      than the current nursery pot the plant is in. </blockquote>
+
+                    <a href="image/succulent.jpg">
+                        <img class="img-responsive" src="image/succulent.jpg" alt="">
+                    </a>
+
+                    <h2 class="section-heading">The Type of Succulents You Are Using</h2>
+
+                    <p>The types of plants you want to use, including the color schemes,
+                      color combinations, shapes and sizes largely depend on your own personal taste.
+                      There really isn’t a right or wrong way of combining succulent plants.
+                      The only thing I am careful about when combining plants together in one container is their growing needs.
+
+                      As much as possible, you want to put plants with similar growing needs in one container.
+                      If you’re unfamiliar with a plant’s growing needs and the label does not provide you
+                      with basic instructions, just do a quick search to find out what the plant’s basic growing needs are.</p>
+
+                    <a href="image/succulent2.jpg">
+                        <img class="img-responsive" src="image/succulent2.jpg" alt="">
+                    </a>
+
+                    <p>Written by <a href="https://github.com/ruxiz2020">Happy Planer</a>.</p>
+
+                    <p>Share this post on social media: </p>
+                    <div id="share-buttons">
+                      <!-- Facebook -->
+                      <a href="http://www.facebook.com/sharer.php?u=https://ruxiz2020.github.io/frontend_proj1_blog/index.html" target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                      </a>
+
+                      <!-- Twitter -->
+                      <a href="https://twitter.com/share?url=https://ruxiz2020.github.io/frontend_proj1_blog/index.html" target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                      </a>
+
+                      <!-- Reddit -->
+                      <a href="http://reddit.com/submit?url=https://ruxiz2020.github.io/frontend_proj1_blog/index.html Share Buttons" target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+                      </a>
+
+                      <!-- button -->
+                      <button id="like-button"> Love It</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr>
+
+            <div class="row">
+                <div class="col-lg-15">
+
+                  <h1 class="post-title" id="post_2">
+                      Book Review: Man's Search for Meaning (Victor Frankl)
+                  </h1>
+                    <p>Humans in suffering tend to feel hopeless with a deep sense of failure.
+                      MAN's SEARCH FOR MEANING (Frankl, 1984) is a helpful book during such times:
+                      it is highly probable that one would find a solution to their depressed feelings,
+                      if the book is read actively.
+
+                      Written by Austrian neurologist-psychiatrist and a Holocaust survivor Victor Frankl,
+                      this book is simple yet intense and reflective. Frankl is the founder of Logotherapy,
+                      a form of existential psychology. Awarded with several accolades, his books and talks
+                      are the most inspiring on finding meaning in life and in suffering.
+                    </p>
+
+                    <a href="image/mans_search.jpg">
+                        <img class="img-responsive" src="image/mans_search.jpg" alt="">
+                    </a>
+
+
+                    <p>The book stands out extraordinarily as Frankl,
+                      by narrating his life instances in the Auschwitz concentration camp,
+                      presents the remarkable idea of how we can choose to see a purpose or meaning
+                      in any situation, including the worst conditions. He descriptively illustrates his
+                      personal experiences and observations of minute human changes which infuses hope into the reader.
+
+                      With rich primary and secondary data, Frankl puts forward his ideas in three sections.
+                      The qualitative methodology utilized has smoothly fused his thoughts through these three parts,
+                      clarifying Nietzsche words, “He who has a why to live can bear almost any how.”
+                      This book is a collaboration of Frankl's personal experiences and stories,
+                      references to other existential forerunners, quotes from humanistic and psychoanalytic schools,
+                      and excellent figurative examples. Many pathological terms have been used in the book,
+                      which are well explained by the author.
+                    </p>
+                    <a href="image/mans_search2.jpg">
+                        <img class="img-responsive" src="image/mans_search2.jpg" alt="">
+                    </a>
+
+                    <p>An active reader also learns about “Logotherapy” that the author attempts to explain in the second section.
+                      The nature, meaning and goals are well detailed. Even the finest differences between
+                      psychoanalysis and Logotherapy are clearly specified.
+                      Frankl liberally introduces every concept of Logotherapy (such as the existential vacuum,
+                      responsibility of survival, existential frustration).
+                      He also describes the therapy process and techniques with some great figurative examples and case studies.
+                      A novice therapist may find these useful. However,
+                      he fails to explain how one can integrate these techniques with the conventional psychotherapeutic process.
+
+                      Nevertheless, his strong request to re-humanize psychotherapy
+                      inspires us into a new direction of thought and practice.</p>
+
+                      <a href="image/mans_search3.jpg">
+                          <img class="img-responsive" src="image/mans_search3.jpg" alt="">
+                      </a>
+
+                    <p>Written by <a href="https://github.com/ruxiz2020">A Bookworm</a>.</p>
+
+                    <p>Share this post on social media: </p>
+                    <div id="share-buttons">
+
+                      <!-- Facebook -->
+                      <a href="http://www.facebook.com/sharer.php?u=https://ruxiz2020.github.io/frontend_proj1_blog/index.html" target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                      </a>
+
+                      <!-- Twitter -->
+                      <a href="https://twitter.com/share?url=https://ruxiz2020.github.io/frontend_proj1_blog/index.html" target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                      </a>
+
+                      <!-- Reddit -->
+                      <a href="http://reddit.com/submit?url=https://ruxiz2020.github.io/frontend_proj1_blog/index.html Share Buttons" target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+                      </a>
+                      <!-- button -->
+                      <button id="like-button"> Love It</button>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="row">
+                <div class="col-lg-15">
+
+                  <h2 class="post-title" id="post_3">
+                      10 Easy Raw Vegan Recipes Even a Novice Cook Can Make
+                  </h2>
+                    <p>Deciding to eat healthier can be a complete lifestyle change.
+                      For some, it means cutting out desserts. For others, it means skipping seconds.
+                      And, of course, for most, it means incorporating more fruits and vegetables into a daily routine.
+                      But what if you're thinking of eating healthier by trying the raw vegan diet?
+                    </p>
+
+                    <a href="image/veggie.jpg">
+                        <img class="img-responsive" src="image/veggie.jpg" alt="">
+                    </a>
+
+
+                    <h2 class="section-heading">What Is a Raw Vegan Diet?</h2>
+
+                    <p>A raw vegan diet is a plant-based diet with no foods heated above 104 degrees Fahrenheit.
+                       Foods are eaten raw, dehydrated, juiced, blended, soaked, sprouted,
+                       or fermented, and the diet is rich in nuts, seeds, fruits, vegetables, sprouted grains, and legumes.
+                    </p>
+                    <a href="image/veggie2.jpg">
+                        <img class="img-responsive" src="image/veggie2.jpg" alt="">
+                    </a>
+
+                    <p>We've all grown accustomed to various diet trends over the years,
+                      from vegetarianism and going gluten-free to plain old vegan.
+                      In fact, stories in The New York Times about raw vegan diets have been popping up since the early 2000s,
+                      so it isn't necessarily anything new. U.S. News estimates that an early
+                      form has even been around since the 19th century.
+
+
+                      But just because it's been a part of other people's lives for a
+                      certain amount of time doesn't mean you can't learn something new.
+                      If you're interested in what the raw vegan diet is and how to cook within its boundaries,
+                      read on for more.</p>
+
+                      <a href="image/veggie3.jpg">
+                          <img class="img-responsive" src="image/veggie3.jpg" alt="">
+                      </a>
+
+                    <p>Written by <a href="https://github.com/ruxiz2020">Cook & Share</a>.</p>
+
+                    <p>Share this post on social media: </p>
+                    <div id="share-buttons">
+                      <!-- Facebook -->
+                      <a href="http://www.facebook.com/sharer.php?u=https://ruxiz2020.github.io/frontend_proj1_blog/index.html" target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                      </a>
+
+                      <!-- Twitter -->
+                      <a href="https://twitter.com/share?url=https://ruxiz2020.github.io/frontend_proj1_blog/index.html" target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                      </a>
+
+                      <!-- Reddit -->
+                      <a href="http://reddit.com/submit?url=https://ruxiz2020.github.io/frontend_proj1_blog/index.html Share Buttons" target="_blank">
+                        <img src="https://simplesharebuttons.com/images/somacro/reddit.png" alt="Reddit" />
+                      </a>
+
+                      <button id="like-button">Love It</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <hr>
+
+
+
+    </article>
+
+
+
+</div>
+</body>
+
+</html>
