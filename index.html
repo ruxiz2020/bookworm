@@ -5,15 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Book Review</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.png">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/script.js"></script>
+  <title>Bookworm</title>
 
+  <!-- Bootstrap 3.3.0 stylesheet -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome Icon stylesheet -->
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="shortcut icon" href="favicon.png">
+
+  <script src="js/script.js"></script>
   <script src="js/chartjs/Chart.min.js"></script>
   <script src="js/dashboard.js"></script>
+  <script src="js/test.js"></script>
+
 
 </head>
 
@@ -108,7 +117,7 @@
           <li class="dropdown">
             <a href="#">
               <i class="fa fa-cog" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">SETTINGS</span>
+              <span class="span">SETTINGS</span>
               <span class="arrow">
                 <i class="fa fa-angle-down"></i>
               </span>
@@ -117,19 +126,19 @@
               <li>
                 <a href="#">
                   <i class="fa fa-angle-right"></i>
-                  <span class="span" style="font-size:20px">Configuration</span>
+                  <span class="span">Configuration</span>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <i class="fa fa-angle-right"></i>
-                  <span class="span" style="font-size:20px">Users</span>
+                  <span class="span">Users</span>
                 </a>
               </li>
               <li>
                 <a href="#">
                   <i class="fa fa-angle-right"></i>
-                  <span class="span" style="font-size:20px">Profile</span>
+                  <span class="span">Profile</span>
                 </a>
               </li>
             </ul>
@@ -139,7 +148,7 @@
 
       </nav>
       <div class="nav-footer">
-        <a href="#" class="btn btn-sm" style="font-size:20px; color:white;">
+        <a href="#" class="btn btn-sm" style="color:white;">
           <i class="fa fa-sign-out"></i>
         </a>
       </div>
@@ -154,26 +163,135 @@
       <div class="container-title">
         <h1>Currently Popular</h1>
       </div>
-      <div class="row">
-        <div class="col-md-3">
 
-          <!-- Each image is 350px by 233px -->
-          <div id="fadein" class="photobanner card-body ">
+      <!-- container -->
+      <!-- ==== PORTFOLIO ==== -->
+      <div id="portfolio" name="portfolio">
+        <div class="container">
 
-            <img class="first card-books" src="image/cover1.jpg">
-            <img class="card-books" src="image/cover2.jpg">
-            <img class="card-books" src="image/cover3.jpg">
-            <img class="card-books" src="image/cover4.jpg">
-            <img class="card-books" src="image/cover5.jpg">
-            <img class="card-books" src="image/cover6.jpg">
-            <img class="card-books" src="image/cover7.jpg">
-            <img class="card-books" src="image/cover8.jpg">
-            <img class="card-books" src="image/cover9.jpg">
-            <img class="card-books" src="image/cover10.jpg">
-            <img class="card-books" src="image/cover1.jpg">
+          <!-- /row -->
+          <div class="container">
+            <div class="row">
+
+              <!-- PORTFOLIO IMAGE 1 -->
+              <div class="col-md-4 ">
+                <div class="grid overlay">
+                  <figure> <img class="img-responsive" src="image/cover1.jpg" alt="">
+                    <figcaption>
+                      <h5>Coco Cake</h5>
+                      <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a>
+                    </figcaption>
+                    <!-- /figcaption -->
+                  </figure>
+                  <!-- /figure -->
+                </div>
+                <!-- /grid-overlay -->
+              </div>
+
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title">Rose Cake</h4>
+                    </div>
+                    <div class="modal-body">
+                      <p><img class="img-responsive" src="image/cover1.jpg" alt=""></p>
+                      <p>Lorem ipsum dolor sit amet, quo meis audire placerat eu, te eos porro veniam. An everti maiorum detracto mea. </p>
+                    </div>
+                  </div>
+                  <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+              </div>
+              <!-- /.modal -->
+
+              <!-- PORTFOLIO IMAGE 2 -->
+              <div class="col-md-4">
+                <div class="grid overlay">
+                  <figure> <img class="img-responsive" src="image/cover2.jpg" alt="">
+                    <figcaption>
+                      <h5>Green Tea</h5>
+                      <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a>
+                    </figcaption>
+                    <!-- /figcaption -->
+                  </figure>
+                  <!-- /figure -->
+                </div>
+                <!-- /grid-overlay -->
+              </div>
+
+              <!-- PORTFOLIO IMAGE 3 -->
+              <div class="col-md-4">
+                <div class="grid overlay">
+                  <figure> <img class="img-responsive" src="image/cover3.jpg" alt="">
+                    <figcaption>
+                      <h5>Cappuccino</h5>
+                      <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a>
+                    </figcaption>
+                    <!-- /figcaption -->
+                  </figure>
+                  <!-- /figure -->
+                </div>
+                <!-- /grid-overlay -->
+              </div>
+            </div>
+            <!-- /row -->
+
+            <!-- PORTFOLIO IMAGE 4 -->
+            <div class="row">
+              <div class="col-md-4 ">
+                <div class="grid overlay">
+                  <figure> <img class="img-responsive" src="image/cover4.jpg" alt="">
+                    <figcaption>
+                      <h5>Green Tea</h5>
+                      <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a>
+                    </figcaption>
+                    <!-- /figcaption -->
+                  </figure>
+                  <!-- /figure -->
+                </div>
+                <!-- /grid-overlay -->
+              </div>
+
+              <!-- PORTFOLIO IMAGE 5 -->
+              <div class="col-md-4">
+                <div class="grid overlay">
+                  <figure> <img class="img-responsive" src="image/cover5.jpg" alt="">
+                    <figcaption>
+                      <h5>Cookies</h5>
+                      <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a>
+                    </figcaption>
+                    <!-- /figcaption -->
+                  </figure>
+                  <!-- /figure -->
+                </div>
+                <!-- /grid-overlay -->
+              </div>
+
+              <!-- PORTFOLIO IMAGE 6 -->
+              <div class="col-md-4">
+                <div class="grid overlay">
+                  <figure> <img class="img-responsive" src="image/cover6.jpg" alt="">
+                    <figcaption>
+                      <h5>Cake</h5>
+                      <a data-toggle="modal" href="#myModal" class="btn btn-default">More Details</a>
+                    </figcaption>
+                    <!-- /figcaption -->
+                  </figure>
+                  <!-- /figure -->
+                </div>
+                <!-- /grid-overlay -->
+              </div>
+              <!-- /col -->
+            </div>
+            <!-- /row -->
           </div>
+          <!-- /row -->
         </div>
       </div>
+      <!-- /container -->
+
       <br>
 
       </section>
