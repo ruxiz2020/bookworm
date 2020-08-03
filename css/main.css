@@ -2792,3 +2792,141 @@ padding: 6px 15px;
 
 
 /*========End of portfolio========*/
+
+
+/*========Start of tab section========*/
+/*main content tab*/
+
+#main {
+    min-width: 320px;
+    max-width: 1000px;
+    padding: 20px;
+    margin-left: -20px;
+    margin-top: 30px;
+    background: #F3F3F3;
+}
+
+#content1 {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+#content2 {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+#content3 {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+#content4 {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+#content5 {
+    display: none;
+    padding: 20px 0 0;
+    border-top: 1px solid #ddd;
+}
+
+#main>input {
+    display: none;
+}
+
+#main>label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 13px 15px;
+    font-weight: 600;
+    text-align: center;
+    color: #bbb;
+    border: 1px solid transparent;
+}
+
+#main>label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+#main>label[for*='1']:before {
+    content: '\f1cb';
+}
+
+#main>label[for*='2']:before {
+    content: '\f17d';
+}
+
+#main>label[for*='3']:before {
+    content: '\f16b';
+}
+
+#main>label[for*='4']:before {
+    content: '\f1a9';
+}
+
+#main>label[for*='5']:before {
+    content: '\f1a9';
+}
+
+#main>label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+#main>input:checked + label {
+    color: #555;
+    border: 1px solid #7bb661;
+    border-top: 2px solid #7bb661;
+    border-bottom: 1px solid #7bb661;
+    background-color: #7bb661;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5 {
+    display: block;
+}
+
+.question-type2033 {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 13px -3px #777;
+}
+/*========End of tab section========*/
+
+
+/*========Start of Hot Topics========*/
+.dataTxt ul li{
+	list-style:none;
+	line-height:30px;
+}
+.listArrow li{
+background: url('../images/links-arrow.png') 0px 12px no-repeat;
+padding-left:15px;
+}
+.progress {
+height: 12px;
+border-radius:0px;
+}
+.progress .progress-bar.progress-bar-red {
+background: #F76E26;
+}
+.progress .progress-bar.progress-bar-green {
+background: #51D4B6;
+}
+.progress .progress-bar.progress-bar-lblue {
+background: #9FDE32;
+}
+
+/*========End of Hot Topics========*/
