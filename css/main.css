@@ -1612,130 +1612,7 @@ footer .container{
     border-top: 1px solid #487047;
 }
 
-.modal-open {
-    overflow: hidden;
-}
 
-.modal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1050;
-    display: none;
-    overflow: hidden;
-    outline: 0;
-}
-
-.modal.fade .modal-dialog {
-    transition: transform 0.3s ease-out;
-    transform: translate(0, -25%);
-}
-
-.modal.show .modal-dialog {
-    transform: translate(0, 0);
-}
-
-.modal-open .modal {
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-
-.modal-dialog {
-    position: relative;
-    width: auto;
-    margin: 10px;
-}
-
-.modal-content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #487047;
-    border-radius: 0.3rem;
-    outline: 0;
-}
-
-.modal-backdrop {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1040;
-    background-color: #000;
-}
-
-.modal-backdrop.fade {
-    opacity: 0;
-}
-
-.modal-backdrop.show {
-    opacity: 0.5;
-}
-
-.modal-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px;
-    border-bottom: 1px solid #eceeef;
-}
-
-.modal-title {
-    margin-bottom: 0;
-    line-height: 1.5;
-}
-
-.modal-body {
-    position: relative;
-    flex: 1 1 auto;
-    padding: 15px;
-}
-
-.modal-footer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 15px;
-    border-top: 1px solid #eceeef;
-}
-
-.modal-footer> :not(:first-child) {
-    margin-left: .25rem;
-}
-
-.modal-footer> :not(:last-child) {
-    margin-right: .25rem;
-}
-
-.modal-scrollbar-measure {
-    position: absolute;
-    top: -9999px;
-    width: 50px;
-    height: 50px;
-    overflow: scroll;
-}
-
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 500px;
-        margin: 30px auto;
-    }
-
-    .modal-sm {
-        max-width: 300px;
-    }
-}
-
-@media (min-width: 992px) {
-    .modal-lg {
-        max-width: 800px;
-    }
-}
 
 .form-control {
     display: block;
@@ -1813,9 +1690,9 @@ select[multiple].input-sm {
 
 .btn {
     display: inline-block;
-    padding: 6px 12px;
+    padding: 4px 10px;
     margin-bottom: 0;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: normal;
     line-height: 1.42857143;
     text-align: center;
@@ -1841,7 +1718,7 @@ select[multiple].input-sm {
 
 .btn:hover,
 .btn:focus {
-    color: #333;
+    color: #19BD9B;
     text-decoration: none;
 }
 
@@ -2757,24 +2634,23 @@ border-left: 1px solid lightgrey;
 }
 
 ul, .list.custom-list ul {
-margin: 0 0 2px;
-list-style-type: none;
-padding-left:2px;
+	margin: 0 0 11px;
+	list-style-type: none;
+	padding-left: 10px;
 }
-
 .list.custom-list ul li {
-margin: 0;
-padding: 2px 0 2px 30px;
-position: relative;
-background: url(../images/arrow.png) no-repeat 0 11px;
+	margin: 0;
+	padding: 4px 0 5px 30px;
+	border-top: 1px solid #f2f2f2;
+	position: relative;
+	background: url(../images/arrow.png) no-repeat 0 11px;
 }
-
 .list.custom-list ul li a {
-font: 18px/1.2em 'Roboto', sans-serif;
-color: #A52A2A;
-text-transform: none;
-display: inline;
-position: relative;
+	font: 14px/1.2em 'Roboto', sans-serif;
+	color:#878787;
+	text-transform: none;
+	display: inline;
+	position: relative;
 }
 
 .container-forum-summary {
@@ -2813,23 +2689,31 @@ position: relative;
 
 /*========Start of portfolio========*/
 #portfolio {
-	background: #fff;
-	padding: 10px 0;
+	background: transparent;
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  overflow: auto; /* makes page scrollible*/
 }
 #portfolio .btn-default {
 	border: 0;
 }
+.grid figure {
+	margin: 0;
+	position: relative;
+}
 .grid figure img {
-	width: 60%;
+	width: 80%;
 	display: block;
 	position: relative;
 }
+
 .grid figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
 	padding: 20px;
-	color: transparent;
+	color: white;
 	background-color: rgba(216, 169, 27, 0.81);
 }
 .grid figcaption h5 {
@@ -2837,7 +2721,7 @@ position: relative;
 	padding-top: 0px;
 	padding-left: 20px;
 	padding-bottom: 5px;
-	color: transparent;
+	color: white;
 	font-weight: 700;
 	text-align: left;
 	letter-spacing: 1px;
@@ -2905,14 +2789,6 @@ padding: 6px 15px;
 	text-align: center;
 }
 
-.grid figure {
-	margin: 0;
-	position: relative;
-}
-.grid figure img {
-	width: 80%;
-	display: block;
-	position: relative;
-}
+
 
 /*========End of portfolio========*/
