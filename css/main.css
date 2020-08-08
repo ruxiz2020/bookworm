@@ -33,6 +33,7 @@ html {
     height: 100%;
 }
 
+
 body {
     margin: 0;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -46,6 +47,7 @@ body {
     height: calc(100% - 3.5rem);
     overflow-x: hidden;
 }
+
 
 ul {
     padding: 0;
@@ -1357,9 +1359,9 @@ fieldset {
     box-shadow: 0px 0px 13px -3px;
 }
 
-.tags-part2398 h4 {
-    color: #7bb661;
-    font-weight: bold;
+.tags-part2398 h3 {
+    color: #004464;
+    font-weight: 500;
     font-family: serif;
     border-bottom: 2px solid #eaeaeb;
     padding-bottom: 10px;
@@ -1373,10 +1375,10 @@ fieldset {
 }
 
 .tags-part2398 ul li a {
-    background-color: #487047;
+    background-color: #2d4d25;
     padding: 5px;
     font-family: fontawesome;
-    font-size: 16px;
+    font-size: 19px;
     text-decoration: none;
     color: #dddddd;
 }
@@ -1392,7 +1394,7 @@ fieldset {
 
 /* new */
 .new-container {
-	padding:0 10px 0 10px;
+	padding:0 20px 0 20px;
 	position:relative;
 }
 
@@ -1400,17 +1402,17 @@ section.txt-area {
 	background: transparent;
   border-radius: 0.25rem;
 }
+
 .features {
   /* margin: 0px 0 25px; */
   background: transparent;
   border: 0px;
   display: flex;
   flex-wrap: wrap; /* this makes boxs 2 rows*/
-  margin: 20px;
+  margin: auto;
   border-radius: 0.25rem;
   width: auto;
 }
-
 .row,.row-fluid {
 	margin-bottom:30px;
 }
@@ -1689,7 +1691,7 @@ fieldset[disabled] .btn {
 }
 
 .main {
-    margin-top: 3.5rem;
+    margin-top: 3rem;
     padding: 0;
     position: relative;
     height: 100%;
@@ -1895,7 +1897,7 @@ header {
 
 .logo-text {
     font-weight: 500;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     line-height: 3rem;
     display: block;
 }
@@ -1914,19 +1916,18 @@ header {
 
 .topbar {
     position: relative;
-    height: 100%;
+    height: 130%; /* to make the topbar height matching with title area*/
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     /*font-weight: inherit;*/
     font-family: Perpetua;
     color: #487047;
-    background-color: transparent;
+    background-color: #FFFFE0;
     line-height: inherit;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #ddd;
 }
-
 .right,
 .left {
     flex: 0 0 50%;
@@ -2002,12 +2003,13 @@ header {
     text-align: left;
 }
 
+
 .topbar-btn .dropdown::before {
     content: " ";
     border: 10px solid transparent;
     border-bottom-color: #fff;
     position: absolute;
-    top: -10px;
+    top: 0px;
     right: 20px;
     display: block;
     margin: 0 auto;
@@ -2038,6 +2040,7 @@ header {
     margin-top: 0.5rem;
 }
 
+
 .navbar-collopse {
     width: 50px;
     text-align: center;
@@ -2045,20 +2048,19 @@ header {
     background: #FAFAD2;
 }
 
+
 .topbar-title {
-    margin-top: 0.1rem;
-    margin-left: 4rem;
-    font-weight: 800;
-    font-size: 10px;
-    color: green;
+    margin-top: 0.5rem;
+    margin-left: 3rem;
 }
 
 .displayname {
+
     font-weight: normal;
 }
 
 .displayname i {
-    margin-top: 0.8rem;
+    margin-top: 1.5rem;
     margin-left: 1rem;
     transition: all 0.3s ease;
 }
@@ -2076,7 +2078,7 @@ aside {
     padding: 0;
     background-color: #FFFFE0;  /* left menu color*/
     color: #487047;
-    height: 100%;
+    height: 101.5%;
     z-index: 100;
     /* TODO Remove
     width: 220px;
@@ -2086,6 +2088,7 @@ aside {
     margin: 0;
     overflow: auto;
      */
+
 }
 
 nav {
@@ -2094,15 +2097,15 @@ nav {
     width: 220px;
     /* nav-footer height (3.5rem) = 7rem  */
     max-height: calc(100% - 3.5rem);
-    border-right: 1px solid lightgrey;
-    /* overflow-y: auto; */
+    /*border-right: 1px solid lightgrey;*/
+    overflow-y: auto;
 }
 
 .nav {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    border-bottom: 2px solid lightgrey;
+    border: 2px solid lightgrey;
 }
 
 .nav li {
@@ -2118,7 +2121,7 @@ nav {
     position: relative;
     font-weight: 400;
     font-size: inherit;
-    border-right: 1px solid lightgrey;
+    border-top: 1px solid transparent;
     transition: color .3s ease-in-out 0s;
     color: inherit;
     display: table;
@@ -2139,6 +2142,7 @@ nav {
 .nav li i {
     transition: all 0.3s ease;
 }
+
 
 .nav>li>a>i {
     background-image: linear-gradient(to left, transparent, transparent 50%, var(--color-info) 50%, var(--color-info));
@@ -2223,7 +2227,7 @@ nav {
     color: #d0f0c0;
     background: #8FBC8F;
     padding: 0.5rem 0;
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -2245,7 +2249,8 @@ nav {
 /* page-container makes page scrollible, and header sticky to the top*/
 .page-container {
     width: 100%;
-    padding: 15px;
+    padding: 3px;
+    margin-top: 20px;
     position: relative;
     overflow: auto; /* makes page scrollible*/
 }
@@ -2461,6 +2466,8 @@ td {
 
 /* Mobile  End*/
 
+/**** Original file  End****/
+
 /* start of photo banner */
 
 #container {
@@ -2526,16 +2533,24 @@ transition: 1s ease;
   }
 }
 
+
 /*========Start of portfolio========*/
 #portfolio {
 	background: transparent;
   width: 100%;
-  padding: 10px;
+  padding: 2px;
   position: relative;
   overflow: auto; /* makes page scrollible*/
 }
 #portfolio .btn-default {
 	border: 0;
+}
+
+.row-portfolio {
+    display: flex;
+}
+.row-portfolio {
+	margin-bottom:30px;
 }
 .grid figure {
 	margin: 0;
@@ -2559,12 +2574,12 @@ transition: 1s ease;
 	margin: 0;
 	padding-top: 0px;
 	padding-left: 20px;
-	padding-bottom: 5px;
+	padding-bottom: 3px;
 	color: white;
-	font-weight: 700;
+	font-weight: 500;
 	text-align: left;
 	letter-spacing: 1px;
-	font-size:24px;
+	font-size:20px;
 }
 .grid figcaption a {
 	text-align: left;
@@ -2644,8 +2659,8 @@ padding: 6px 15px;
 #main {
     min-width: 320px;
     max-width: 2200px;
-    padding: 20px;
-    margin-left: -10px;
+    padding: 10px;
+    margin-left: 5px;
     margin-top: 20px;
     background: #aed9ae;
 }
@@ -2746,7 +2761,7 @@ padding: 6px 15px;
 
 #main>label {
     display: inline-block;
-    margin: 0 0 -1px;
+    margin: 0 0 1px;
     padding: 13px 15px;
     font-weight: 500;
     font-size: 20px;
@@ -2813,11 +2828,12 @@ padding: 6px 15px;
 
 
 
-/*footer -top serch*/
+/*footer -top search*/
 
 .footer-search {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 #custom-search-input {
@@ -2829,12 +2845,12 @@ padding: 6px 15px;
 #custom-search-input .search-query {
     padding-right: 3px;
     padding-right: 4px \9;
-    padding-left: 55px;
+    padding-left: 85px;
     padding-left: 4px \9;
     margin-bottom: 0;
     outline: none;
     height: 43px;
-    color: #222629;
+    color: #8FBC8F;
     font-weight: bold;
     flow-from: fontawesome;
 }
@@ -2860,7 +2876,7 @@ padding: 6px 15px;
     z-index: 9999;
     margin-left: 0px;
     font-size: 25px;
-    background-color: #222629;
+    background-color: #8FBC8F;
     padding: 9px;
     color: #fff;
 }
@@ -2872,11 +2888,11 @@ padding: 6px 15px;
 }
 
 .footer-search .form-control {
-    border-color: #7bb661;
+    border-color: #8FBC8F;
 }
 
 .footer-search .form-control:focus {
-    border-color: #7bb661;
+    border-color: #8FBC8F;
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -2886,20 +2902,23 @@ padding: 6px 15px;
 /*===========Start footer-part============*/
 
 .footer-part {
+    margin-top: 50px;
     background-color: #2F3239;
-    padding: 30px;
+    padding: 10px;
 }
 
 .info-part-one320 {
+    margin-top: 25px;
     color: #ddd;
     font-family: fontawesome;
 }
 
-.info-part-one320 h4 {
+.info-part-one320 h3 {
     color: #7bb661;
 }
 
-.info-part-two320 h4 {
+.info-part-two320 h3 {
+    margin-top: 25px;
     color: #7bb661;
     font-family: fontawesome;
 }
@@ -2933,7 +2952,8 @@ padding: 6px 15px;
     border-bottom: none;
 }
 
-.info-part-three320 h4 {
+.info-part-three320 h3 {
+    margin-top: 25px;
     color: #7bb661;
     font-family: fontawesome;
 }
@@ -2966,7 +2986,8 @@ padding: 6px 15px;
     font-family: fontawesome;
 }
 
-.info-part-four320 h4 {
+.info-part-four320 h3 {
+    margin-top: 25px;
     color: #7bb661;
     font-family: fontawesome;
 }
@@ -3003,11 +3024,11 @@ padding: 6px 15px;
 
 .footer-social {
     background-color: #222629;
-    padding: 10px;
+    padding: 12px;
 }
 
 .footer-social p {
-    color: #ddd;
+    color: #fff;
     font-family: fontawesome;
 }
 
@@ -3021,12 +3042,12 @@ padding: 6px 15px;
     padding-left: 8px;
     height: 30px;
     width: 30px;
-    border: 1px solid #000;
+    border: 1px solid #7bb661;
     border-radius: 50%;
 }
 
 .social-right2389 i {
-    color: #000;
+    color: #7bb661;
 }
 
 /*===========End footer-part============*/
