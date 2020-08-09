@@ -1605,7 +1605,6 @@ select[multiple].input-sm {
     -ms-user-select: none;
     user-select: none;
     background-image: none;
-    border: 1px solid transparent;
     border-radius: 4px;
     border: 1px solid rgba(27, 31, 35, .15);
 }
@@ -2051,7 +2050,7 @@ header {
 
 .topbar-title {
     margin-top: 0.5rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 
 .displayname {
@@ -2429,42 +2428,7 @@ td {
 /* Dashboard End */
 
 
-/* Mobile  Start*/
-@media only screen and (max-width: 700px) {
 
-    /* Sidebar Start */
-    aside {
-        position: fixed;
-        transition: all 0.3s ease;
-        left: -220px;
-    }
-
-    .mobile-view aside {
-        left: 0;
-    }
-
-    nav {
-        max-height: calc(100% - 7rem);
-        /* width: 220px !important; */
-    }
-/*
-    .mobile-view .nav li>a>span {
-        display: table-cell;
-    } */
-
-    .nav-footer {
-        bottom: 3.5rem;
-    }
-
-    /* Sidebar End */
-
-    table {
-        display: block;
-        overflow-x: auto;
-    }
-}
-
-/* Mobile  End*/
 
 /**** Original file  End****/
 
@@ -2548,6 +2512,7 @@ transition: 1s ease;
 
 .row-portfolio {
     display: flex;
+    display: -webkit-flex;
 }
 .row-portfolio {
 	margin-bottom:30px;

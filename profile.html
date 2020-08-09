@@ -6,27 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bookworm</title>
-  <link rel="stylesheet" href="css/style.css">
+
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+
+  <!-- Font Awesome Icon stylesheet -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.png">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
-
   <script src="js/chartjs/Chart.min.js"></script>
   <script src="js/dashboard.js"></script>
 </head>
 
 <body>
+
+
   <header>
     <div class="logo">
       <div class="img">
         <span class="logo-text">Bookworm</span>
-        <span class="logo-text minbar" style="margin-top: 1.3rem"><i class="fa fa-book"></i></span>
+        <span class="logo-text minbar"><i class="fa fa-book"></i></span>
       </div>
     </div>
     <div class="topbar">
       <div class="left">
-        <a class="navbar-collopse"> <i class="fa fa-bars" style="font-size:24px"></i> </a>
+        <a class="navbar-collopse"> <i class="fa fa-bars" style="margin-top: 1.5rem;"></i> </a>
         <span style="color:#4682B4;" class="topbar-title">Read </span>
         <span style="color:#FFB6C1;" class="topbar-title">Write</span>
         <span style="color:#DEB887;" class="topbar-title">Enjoy</span>
@@ -38,7 +46,7 @@
       </div>
       <div class="right">
         <span class="">
-          <i class="fa fa-bell" style="margin-top: 0.8rem"></i>
+          <i class="fa fa-bell" style="margin-top: 1.5rem"></i>
         </span>
         <div class="topbar-btn">
           <span class="displayname">John Doe
@@ -71,95 +79,270 @@
     </div>
   </header>
 
-    <div class="main">
-      <aside>
-        <nav>
-          <ul class="nav">
-            <li>
-              <a href="index.html">
-                <i class="fa fa-home" style="font-size:24px"></i>
-                <span class="span" style="font-size:20px">HOME</span>
-              </a>
-            </li>
-            <li>
-              <a href="blog.html">
-                <i class="fa fa-comments-o" style="font-size:24px"></i>
-                <span class="span" style="font-size:20px">BLOGS</span>
-              </a>
-            </li>
+  <div class="main">
 
-            <li class="active">
-                <a href="profile.html">
-                  <i class="fa fa-user" style="font-size:24px"></i>
-                  <span class="span" style="font-size:20px">PROFILE</span>
+    <aside>
+      <nav>
+        <ul class="nav">
+          <li>
+            <a href="index.html">
+              <i class="fa fa-home" style="font-size:24px"></i>
+              <span class="span" style="font-size:20px">HOME</span>
+            </a>
+          </li>
+          <li>
+            <a href="book.html">
+              <i class="fa fa-book" style="font-size:24px"></i>
+              <span class="span" style="font-size:20px">BOOKS</span>
+            </a>
+          </li>
+          <li>
+            <a href="movie.html">
+              <i class="fa fa-video-camera" style="font-size:24px"></i>
+              <span class="span" style="font-size:20px">MOVIES</span>
+            </a>
+          </li>
+          <li>
+            <a href="music.html">
+              <i class="fa fa-music" style="font-size:24px"></i>
+              <span class="span" style="font-size:20px">MUSICS</span>
+            </a>
+          </li>
+          <li>
+            <a href="blog.html">
+              <i class="fa fa-comments-o" style="font-size:24px"></i>
+              <span class="span" style="font-size:20px">BLOGS</span>
+            </a>
+          </li>
+          <li class="active">
+            <a href="profile.html">
+              <i class="fa fa-user" style="font-size:24px"></i>
+              <span class="span" style="font-size:20px">PROFILE</span>
+            </a>
+          </li>
+          <li>
+            <a href="table.html">
+              <i class="fa fa-users" style="font-size:24px"></i>
+              <span class="span" style="font-size:20px">USERS</span>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#">
+              <i class="fa fa-cog" style="font-size:24px"></i>
+              <span class="span" style="font-size:20px">SETTINGS</span>
+              <span class="arrow">
+                <i class="fa fa-angle-down"></i>
+              </span>
+            </a>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-angle-right"></i>
+                  <span class="span" style="font-size:20px">Configuration</span>
                 </a>
-            </li>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-angle-right"></i>
+                  <span class="span" style="font-size:20px">Users</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-angle-right"></i>
+                  <span class="span" style="font-size:20px">Profile</span>
+                </a>
+              </li>
+            </ul>
+          </li>
 
-            <li>
-              <a href="table.html">
-                <i class="fa fa-users" style="font-size:24px"></i>
-                <span class="span" style="font-size:20px">USERS</span>
-              </a>
-            </li>
-            <li class="dropdown">
-              <a href="#">
-                <i class="fa fa-cog" style="font-size:24px"></i>
-                <span class="span" style="font-size:20px">SETTINGS</span>
-                <span class="arrow">
-                  <i class="fa fa-angle-down"></i>
-                </span>
-              </a>
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-angle-right"></i>
-                    <span class="span" style="font-size:20px">Configuration</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-angle-right"></i>
-                    <span class="span" style="font-size:20px">Users</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa fa-angle-right"></i>
-                    <span class="span" style="font-size:20px">Profile</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
+        </ul>
+      </nav>
+      <div class="nav-footer">
+        <a href="#" class="btn btn-sm" style="font-size:20px; color:white;">
+          <i class="fa fa-sign-out"></i>
+        </a>
+      </div>
+    </aside>
 
-          </ul>
-        </nav>
-        <div class="nav-footer">
-          <a href="#" class="btn btn-sm" style="font-size:20px; color:white;">
-            <i class="fa fa-sign-out"></i>
-          </a>
-        </div>
-      </aside>
+    <div class="page-container">
+      <!-- MAIN SECTION -->
+      <section>
+        <div class="container-fluid">
 
-        <div class="page-container">
-            <div class="row  h-p-100">
-                <div class="col-md-4">
-                    <div class="card  h-p-100">
-                        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8 mt-4">
+              <div class="profile">
+                <h1 class="border-bottom pb-2">John Doe</h1>
 
-                        </div>
+                <div class="profile-main-card">
+                  <div class="row pt-2">
+                    <div class="profile-img col-md-4 text-center">
+                      <img src="image/user.png" alt="User image" class="img-thumbnail">
                     </div>
-                </div>
 
-                <div class="col-md-8">
-                    <div class="card">
-                        <div class="card-body">
-
-                        </div>
+                    <div class="col-md-8 text-center text-md-left align-self-center">
+                      <h2>User Profile</h2>
+                      <ul class="list-unstyled mt-3 mt-md-0">
+                        <li><strong>Email Address: </strong>johndoe@gmail.com</li>
+                        <li><strong>Name: </strong> John Doe</li>
+                        <li><strong>City: </strong>Boston</li>
+                        <li><strong>State: </strong>Massachusetts</li>
+                        <li><strong>Gender: </strong> Male</li>
+                        <li><strong>Profession: </strong> Web Developer</li>
+                        <li><strong>Interests: </strong> Reading, Movie, Music, Hiking, Photography, Tennis, Traveling</li>
+                      </ul>
                     </div>
+                  </div>
+
+                </div><!-- end row -->
+
+              </div><!-- end profile -->
+              <!-- PROFILE WALL -->
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="card mt-4">
+                    <div class="card-header h5 bg-color">Profile Wall</div>
+
+                    <div class="card-body">
+                      <form>
+                        <div class="form-group">
+                          <textarea class="form-control" placeholder="Say something"></textarea>
+                        </div><!-- end form-group -->
+
+                        <button type="submit" class="btn btn-success">Post</button>
+
+                        <div class="float-right">
+                          <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-light rounded">
+                              <i class="fa fa-pencil-alt"></i> Text
+                            </button>
+                            <button type="button" class="btn btn-light rounded">
+                              <i class="fa fa-file-image"></i> Image
+                            </button>
+                            <button type="button" class="btn btn-light rounded">
+                              <i class="fa fa-file-video"></i> Video
+                            </button>
+                          </div><!-- end btn-group -->
+
+                        </div><!-- end float-right -->
+
+                      </form>
+                    </div><!-- end card-body -->
+                  </div><!-- end card -->
                 </div>
-            </div>
+              </div>
+
+            </div><!-- end col-md-8 -->
+
+            <div class="col-md-4">
+              <div class="card friends mt-4">
+                <div class="card-header h5 bg-color"> My Friends</div>
+                <div class="card-body">
+                  <div class="d-flex">
+                    <ul class="mx-auto justify-content-center quit-padding-left">
+                      <li class="list-inline-item no-margin-right">
+                        <a href="profile.html" class="thumbnail">
+                          <img class="img-thumbnail shadow-sm float-left mr-2" src="image/users.png" alt="User image">
+                        </a>
+                      </li>
+
+                      <li class="list-inline-item no-margin-right">
+                        <a href="profile.html" class="thumbnail">
+                          <img class="img-thumbnail shadow-sm float-left mr-2" src="image/users.png" alt="User image">
+                        </a>
+                      </li>
+
+                      <li class="list-inline-item no-margin-right">
+                        <a href="profile.html" class="thumbnail">
+                          <img class="img-thumbnail shadow-sm float-left mr-2" src="image/users.png" alt="User image">
+                        </a>
+                      </li>
+
+                      <li class="d-block d-md-inline-block list-inline-item no-margin-right">
+                        <a href="profile.html" class="thumbnail">
+                          <img class="img-thumbnail shadow-sm float-left mr-2" src="image/users.png" alt="User image">
+                        </a>
+                      </li>
+
+                      <li class="list-inline-item no-margin-right">
+                        <a href="profile.html" class="thumbnail">
+                          <img class="img-thumbnail shadow-sm float-left mr-2" src="image/users.png" alt="User image">
+                        </a>
+                      </li>
+
+                      <li class="list-inline-item no-margin-right">
+                        <a href="profile.html" class="thumbnail">
+                          <img class="img-thumbnail shadow-sm float-left" src="image/users.png" alt="User image">
+                        </a>
+                      </li>
+                    </ul><!-- end list-inline -->
+
+                  </div><!-- end d-flex -->
+
+                  <!-- THIS IS TO ALIGN THE BUTTON IN THE MIDDLE OF THE COLUMN -->
+                  <div class="row">
+                    <div class="col-9 offset-2 text-center">
+                      <a href="profile.html" class="btn btn-info">View all friends</a>
+                    </div><!-- end col-9 offset-2 text-center -->
+                  </div><!-- end row -->
+
+                </div><!-- end card-body -->
+              </div><!-- end card friends mt-4 -->
+
+              <div class="card groups mt-4">
+                <div class="card-header h5 bg-color">Latest Groups</div>
+                <div class="card-body">
+                  <!-- IMAGES WILL HAVE INLINE STYLES AS IT DOESNT WORK THROUGH STYLES.CSS -->
+                  <div class="group-item pb-3 border-bottom">
+                    <img style="width: 80px;" class="float-left mr-3" src="img/group.png" alt="Group image">
+                    <h4>
+                      <a href="#">Sample Group One</a>
+                    </h4>
+                    <p>This is a Dobble social network sample group</p>
+                  </div><!-- end group-item pb-3 border-bottom -->
+
+                  <div class="group-item border-bottom pt-3 pb-3">
+                    <img style="width: 80px;" class="float-left mr-3" src="img/group.png" alt="Group image">
+                    <h4>
+                      <a href="#">Sample Group Two</a>
+                    </h4>
+                    <p>This is a Dobble social network sample group</p>
+                  </div><!-- end "group-item border-bottom pt-3 pb-3 -->
+
+                  <div class="group-item pt-3">
+                    <img style="width: 80px;" class="float-left mr-3" src="img/group.png" alt="Group image">
+                    <h4>
+                      <a href="#">Sample Group Three</a>
+                    </h4>
+                    <p>This is a Dobble social network sample group</p>
+                  </div><!-- end group-item pt-3 -->
+                  <!-- TO CENTER BUTTON -->
+                  <div class="row">
+                    <div class="col-10 offset-2 offset-sm-0 text-center">
+                      <a href="profile.html" class="btn btn-info">View all Groups</a>
+                    </div><!-- end col-9 offset-2 text-center -->
+                  </div><!-- end row -->
+
+                </div><!-- end card-body -->
+
+              </div><!-- end card groups mt-4 -->
+            </div><!-- end col-md-4 -->
+
+          </div><!-- end row -->
+
+
+        </div><!-- end container -->
+      </section><!-- end section -->
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="container">
+          <p>Dobble Copyright &copy; 2019, All Rights Reserved.</p>
         </div>
+      </footer>
     </div>
+  </div>
 </body>
 
 </html>
