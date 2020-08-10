@@ -1,0 +1,106 @@
+/*============user question===========*/
+
+.user-profile328903 {
+    background-color: transparent;
+    margin-top: 40px;
+}
+.about-user2039 {
+    padding: 10px;
+    background-color: #fff;
+    margin-top: 30px;
+    font-family: fontawesome;
+    font-size: 20px;
+}
+/*-======USER=======*/
+
+.user-image2939303 {
+    background-color: transparent;
+    margin-top: 35px;
+    margin-right: 35px;
+}
+
+.user-image2939303 img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+
+}
+.user-description3903 p {
+    font-family: fontawesome;
+}
+
+.user-description3903 a {
+    font-family: fontawesome;
+    text-decoration: none;
+    color: #7bb661;
+}
+.user-social3903 {
+    margin-top: 30px;
+}
+
+.user-social3903 a {
+    background-color: #000;
+}
+
+.user-social3903 i {
+    background-color: #000;
+    height: 30px;
+    width: 30px;
+    padding: 8px;
+    color: #fff;
+}
+
+.user-social3903 i:hover {
+    background-color: #000;
+    height: 30px;
+    width: 30px;
+    padding: 8px;
+    color: #fff;
+}
+
+.user-social3903 .fa-facebook {
+    background-color: #3B5998;
+}
+
+.user-social3903 .fa-twitter {
+    background-color: #1DA1F2;
+}
+
+.user-social3903 .fa-linkedin {
+    background-color: #0077B5;
+}
+
+.user-social3903 .fa-google-plus {
+    background-color: #CE4538;
+}
+
+.user-social3903 .fa-pinterest-p {
+    background-color: #BD081C;
+}
+
+.user-social3903 .fa-instagram {
+    background-color: #E3425A;
+}
+
+.user-social3903 .fa-envelope-o {
+    background-color: #222629;
+}
+
+.badge229 a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 10px;
+    padding: 3px 10px 3px 10px;
+    background-color: #DD9933;
+    font-family: fontawesome;
+    border-radius: 2px;
+    display: inline-block;
+}
+.badge229 a {
+    color: #fff;
+}
+
+.category2781 {
+    margin-top: 70px;
+}

@@ -52,7 +52,16 @@
   font-size: 15px;
   margin-top: 2px;
 }
+.img-thumbnail{
+  margin: 6px;
+}
 .mx-auto {
-  display: flex;
-  display: -webkit-flex;
+  overflow:hidden;
+  overflow-y:scroll;
+  height:250px;
+}
+.card-body {
+  overflow:hidden;
+  overflow-y:scroll;
+  height:450px;
 }
