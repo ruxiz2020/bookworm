@@ -9,160 +9,130 @@
 
   <!-- main stylesheet -->
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/responsive.css">
-
   <!-- Font Awesome Icon stylesheet -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" type="text/css">
 
-  <link rel="shortcut icon" href="favicon.png">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/chartjs/Chart.min.js"></script>
-  <script src="js/dashboard.js"></script>
 </head>
 
 <body>
 
 
-  <header>
-    <div class="logo">
-      <div class="img">
-        <span class="logo-text">Bookworm</span>
-        <span class="logo-text minbar"><i class="fa fa-book"></i></span>
-      </div>
-    </div>
-    <div class="topbar">
-      <div class="left">
-        <a class="navbar-collopse"> <i class="fa fa-bars" style="margin-top: 1.5rem;"></i> </a>
-        <span style="color:#4682B4;" class="topbar-title">Read </span>
-        <span style="color:#FFB6C1;" class="topbar-title">Write</span>
-        <span style="color:#DEB887;" class="topbar-title">Enjoy</span>
-        <span style="color:#FF8C00;" class="topbar-title">Think</span>
-        <span style="color:#8FBC8F;" class="topbar-title">Create</span>
-        <span style="color:#708090;" class="topbar-title">Share</span>
-        <span style="color:#FF6347;" class="topbar-title">Meet</span>
-        <span style="color:#8B4513;" class="topbar-title">Inspire</span>
-      </div>
-      <div class="right">
-        <span class="">
-          <i class="fa fa-bell" style="margin-top: 1.5rem"></i>
-        </span>
-        <div class="topbar-btn">
-          <span class="displayname">John Doe
-            <i class="fa fa-angle-down"></i>
-          </span>
-          <ul class="dropdown">
-            <li class="dropdown-username">
-              <a href="#">
-                John Doe
-              </a>
-            </li>
-            <li>
-              <a href="profile.html">
-                PROFILE
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                SETTINGS
-              </a>
-            </li>
-            <li class="dropdown-footer">
-              <a href="#">
-                LOGOUT
-              </a>
-            </li>
-          </ul>
+  <!--======== Navbar =======-->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="navbar-menu-left-side239">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a></li>
+                            <li><a href="#"><i class="fa fa-headphones" aria-hidden="true"></i>Support</a></li>
+                            <li><a href="logIn.html"><i class="fa fa-user" aria-hidden="true"></i>Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="navbar-serch-right-side">
+                        <form class="navbar-form" role="search">
+                            <div class="input-group add-on">
+                                <input class="form-control form-control222" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-default btn-default2913" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </header>
 
-  <div class="main">
 
-    <aside>
-      <nav>
-        <ul class="nav">
-          <li class="active">
-            <a href="index.html">
-              <i class="fa fa-home" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">HOME</span>
-            </a>
-          </li>
-          <li>
-            <a href="book.html">
-              <i class="fa fa-book" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">BOOKS</span>
-            </a>
-          </li>
-          <li>
-            <a href="movie.html">
-              <i class="fa fa-video-camera" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">MOVIES</span>
-            </a>
-          </li>
-          <li>
-            <a href="music.html">
-              <i class="fa fa-music" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">MUSICS</span>
-            </a>
-          </li>
-          <li>
-            <a href="blog.html">
-              <i class="fa fa-comments-o" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">BLOGS</span>
-            </a>
-          </li>
-          <li>
-            <a href="profile.html">
-              <i class="fa fa-user" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">PROFILE</span>
-            </a>
-          </li>
-          <li>
-            <a href="table.html">
-              <i class="fa fa-users" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">USERS</span>
-            </a>
-          </li>
-          <li class="dropdown">
-            <a href="#">
-              <i class="fa fa-cog" style="font-size:24px"></i>
-              <span class="span" style="font-size:20px">SETTINGS</span>
-              <span class="arrow">
-                <i class="fa fa-angle-down"></i>
-              </span>
-            </a>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fa fa-angle-right"></i>
-                  <span class="span" style="font-size:20px">Configuration</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-angle-right"></i>
-                  <span class="span" style="font-size:20px">Users</span>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa fa-angle-right"></i>
-                  <span class="span" style="font-size:20px">Profile</span>
-                </a>
-              </li>
-            </ul>
-          </li>
+    <!-- ==========header mega navbar=======-->
+    <div class="top-menu-bottom932">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
 
-        </ul>
-      </nav>
-      <div class="nav-footer">
-        <a href="#" class="btn btn-sm" style="font-size:20px; color:white;">
-          <i class="fa fa-sign-out"></i>
-        </a>
-      </div>
-    </aside>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav"> </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Groups <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated zoomIn">
+                                <li><a href="book.html" target="_blank">Book Reviews</a></li>
+                            </ul>
+                            <ul class="dropdown-menu animated zoomIn">
+                                <li><a href="movie.html" target="_blank">Movie Reviews</a></li>
+                            </ul>
+                            <ul class="dropdown-menu animated zoomIn">
+                                <li><a href="music.html" target="_blank">Music Reviews</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Settings <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated zoomIn">
+                                <li><a href="profile.html" target="_blank">Profile </a></li>
+                            </ul>
+                            <ul class="dropdown-menu animated zoomIn">
+                                <li><a href="table.html" target="_blank">Users </a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blogs <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated zoomIn">
+                                <li><a href="blog.html" target="_blank">blogs </a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated zoomIn">
+                                <li><a href="index.html" target="_blank">Login</a></li>
+                                <li><a href="index.html" target="_blank"> Contact</a></li>
+                                <li><a href="index.html" target="_blank"> Search </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </div>
+
+
+    <!--======= welcome section on top background=====-->
+    <section class="welcome-part-one">
+        <div class="container">
+            <div class="welcome-demop102 text-center">
+                <h2 >Bookworm</h2>
+                <div class="topbar">
+                  <span style="color:#4682B4;" class="topbar-title">Read </span>
+                  <span style="color:#FFB6C1;" class="topbar-title">Write</span>
+                  <span style="color:#DEB887;" class="topbar-title">Enjoy</span>
+                  <span style="color:#FF8C00;" class="topbar-title">Think</span>
+                  <span style="color:#8FBC8F;" class="topbar-title">Create</span>
+                  <span style="color:#708090;" class="topbar-title">Share</span>
+                  <span style="color:#FF6347;" class="topbar-title">Meet</span>
+                  <span style="color:#8B4513;" class="topbar-title">Inspire</span>
+                </div>
+                <div class="button0239-item">
+                    <a href="#">
+                        <button type="button" class="aboutus022">Log In</button>
+                    </a>
+                    <a href="#">
+                        <button type="button" class="join92">Register</button>
+                    </a>
+                </div>
+                <div class="form-style8292">
+                    <div class="input-group"> <span class="input-group-addon"><i class="fa fa-pencil-square" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control form-control8392" placeholder="Ask any question and you be sure find your answer ?"> <span class="input-group-addon"><a href="#">Ask Now</a></span> </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- ======end content section/body=====-->
 
@@ -171,22 +141,6 @@
     <div id="bannerimage" style="background-image: url('image/banner.jpg'); opacity: 0.7;">
     </div>
     -->
-
-    <div class="footer-search">
-      <div class="container">
-        <div class="row">
-          <div id="custom-search-input">
-            <div class="input-group col-md-12"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-              <input type="text" class="  search-query form-control user-control30" placeholder="Search here...." /> <span class="input-group-btn">
-                <button class="btn btn-danger" type="button">
-                  <span class=" glyphicon glyphicon-search"></span> </button>
-              </span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
 
       <!-- ======start container (right main page 100% height)=====-->
       <div class="container">
@@ -1015,123 +969,122 @@
         </div>
       </div>
       <!-- ======End container (right main page 100% height)=====-->
-          </br>
+      </br>
 
-          <!--  Start of  footer -->
+      <!--  Start of  footer -->
 
-          <section class="footer-part">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="info-part-one320">
-                    <h3>WHERE ARE WE?</h3>
-                    <p>San Francisco Bayarea.</p>
-                    <h3>Address :</h3>
-                    <p>Bookworm, 33 Street, syada
-                      <br> Zeinab, Cairo, Egypt.</p>
-                    <h3>Support :</h3>
-                    <p>Support Telephone No : </p>
-                    <p>(+1)0123456789</p>
-                    <p>Support Email Account : </p>
-                    <p>info@example.com</p>
-                  </div>
+      <section class="footer-part">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="info-part-one320">
+                <h3>WHERE ARE WE?</h3>
+                <p>San Francisco Bayarea.</p>
+                <h3>Address :</h3>
+                <p>Bookworm, 33 Street, syada
+                  <br> Zeinab, Cairo, Egypt.</p>
+                <h3>Support :</h3>
+                <p>Support Telephone No : </p>
+                <p>(+1)0123456789</p>
+                <p>Support Email Account : </p>
+                <p>info@example.com</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-part-two320">
+                <h3>QUICK LINKS</h3>
+                <a href="#">
+                  <p>-HOME-</p>
+                </a>
+                <a href="#">
+                  <p>-BOOKS-</p>
+                </a>
+                <a href="#">
+                  <p>-MOVIES-</p>
+                </a>
+                <a href="#">
+                  <p>-BLOGS-</p>
+                </a>
+                <a href="#">
+                  <p>-SETTING-</p>
+                </a>
+                <a href="#">
+                  <p>-USERS-</p>
+                </a>
+                <a href="#">
+                  <p>-CONTACT-</p>
+                </a>
+                <a href="#">
+                  <p>-PROFILE-</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="info-part-three320">
+                <h3>POPULAR POSTS</h3>
+                <div class="news-info209">
+                  <h5>Why are the British confused</h5>
+                  <p>(Why I darest say, they darest not get offended when they so ...</p> <small>July 16, 2020</small>
                 </div>
-                <div class="col-md-3">
-                  <div class="info-part-two320">
-                    <h3>QUICK LINKS</h3>
-                    <a href="#">
-                      <p>-HOME-</p>
-                    </a>
-                    <a href="#">
-                      <p>-BOOKS-</p>
-                    </a>
-                    <a href="#">
-                      <p>-MOVIES-</p>
-                    </a>
-                    <a href="#">
-                      <p>-BLOGS-</p>
-                    </a>
-                    <a href="#">
-                      <p>-SETTING-</p>
-                    </a>
-                    <a href="#">
-                      <p>-USERS-</p>
-                    </a>
-                    <a href="#">
-                      <p>-CONTACT-</p>
-                    </a>
-                    <a href="#">
-                      <p>-PROFILE-</p>
-                    </a>
-                  </div>
+                <div class="news-info209">
+                  <h5>How to approach applying for</h5>
+                  <p>(I am trying to find/change my career trajectory. Its a good cozy ...</p> <small>July 16, 2020</small>
                 </div>
-                <div class="col-md-3">
-                  <div class="info-part-three320">
-                    <h3>POPULAR POSTS</h3>
-                    <div class="news-info209">
-                      <h5>Why are the British confused</h5>
-                      <p>(Why I darest say, they darest not get offended when they so ...</p> <small>July 16, 2020</small>
-                    </div>
-                    <div class="news-info209">
-                      <h5>How to approach applying for</h5>
-                      <p>(I am trying to find/change my career trajectory. Its a good cozy ...</p> <small>July 16, 2020</small>
-                    </div>
-                    <div class="news-info209">
-                      <h5>How to evaluate whether a</h5>
-                      <p>A friend of mine is the CEO of his own small business. ...</p> <small>July 16, 2017</small>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="info-part-four320">
-                    <h3>LATEST POSTS</h3>
-                    <div class="tweet-details29">
-                      <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck a new update #AskMe #ThemeForest #WordPress #2code #Envato#2code
-                          Themehttps://t.co/urb3LgsOCi</a></p> <small>about 2 weeks ago</small>
-                    </div>
-                    <div class="tweet-details29">
-                      <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck a new update #AskMe #ThemeForest #WordPress #2code #Envato#2code
-                          Themehttps://t.co/urb3LgsOCi</a></p> <small>about 2 weeks ago</small>
-                    </div>
-                    <div class="tweet-details29">
-                      <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck a new update #AskMe #ThemeForest #WordPress #2code #Envato#2code
-                          Themehttps://t.co/urb3LgsOCi</a></p> <small>about 2 weeks ago</small>
-                    </div>
-                  </div>
+                <div class="news-info209">
+                  <h5>How to evaluate whether a</h5>
+                  <p>A friend of mine is the CEO of his own small business. ...</p> <small>July 16, 2017</small>
                 </div>
               </div>
             </div>
-          </section>
-          <section class="footer-social">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <p>Copyright 2020 Bookworm | <strong>Sudo Coder</strong></p>
+            <div class="col-md-3">
+              <div class="info-part-four320">
+                <h3>LATEST POSTS</h3>
+                <div class="tweet-details29">
+                  <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck a new update #AskMe #ThemeForest #WordPress #2code #Envato#2code
+                      Themehttps://t.co/urb3LgsOCi</a></p> <small>about 2 weeks ago</small>
                 </div>
-                <div class="col-md-6">
-                  <div class="social-right2389">
-                    <a href="#">
-                      <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a href="#">
-                      <i class="fa fa-google-plus"
-                        aria-hidden="true"></i>
-                      </a> <a href="#">
-                        <i class="fa fa-youtube" aria-hidden="true"></i>
-                      </a>
-                      <a href="#"><i class="fa fa-skype" aria-hidden="true"></i>
-                      </a>
-                      <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                      <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
-                    </div>
+                <div class="tweet-details29">
+                  <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck a new update #AskMe #ThemeForest #WordPress #2code #Envato#2code
+                      Themehttps://t.co/urb3LgsOCi</a></p> <small>about 2 weeks ago</small>
+                </div>
+                <div class="tweet-details29">
+                  <p><i class="fa fa-twitter-square" aria-hidden="true"></i><a href="#"> codeThemesCheck a new update #AskMe #ThemeForest #WordPress #2code #Envato#2code
+                      Themehttps://t.co/urb3LgsOCi</a></p> <small>about 2 weeks ago</small>
                 </div>
               </div>
             </div>
-          </section>
-          <!--  End of  footer -->
+          </div>
+        </div>
+      </section>
+      <section class="footer-social">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>Copyright 2020 Bookworm | <strong>Sudo Coder</strong></p>
+            </div>
+            <div class="col-md-6">
+              <div class="social-right2389">
+                <a href="#">
+                  <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a> <a href="#">
+                  <i class="fa fa-youtube" aria-hidden="true"></i>
+                </a>
+                <a href="#"><i class="fa fa-skype" aria-hidden="true"></i>
+                </a>
+                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--  End of  footer -->
 
 
 
@@ -1150,6 +1103,10 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <!-- banner animation -->
   <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
