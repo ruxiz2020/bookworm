@@ -56,6 +56,7 @@ hr {
 .navbar-menu-left-side239 ul li a {
     text-decoration: none;
     color: #fff;
+    font-size:12px;
     font-family: "FontAwesome";
 }
 
@@ -67,7 +68,7 @@ hr {
 }
 
 .navbar-menu-left-side239 ul li a i {
-    margin-right: 8px;
+    margin-right: 12px;
 }
 
 .navbar-menu-left-side239 .fa-envelope-o::after {
@@ -221,7 +222,8 @@ hr {
 .navbar-default {
     background-color: #306030;
     border-color: #306030;
-    padding: 20px;
+    padding: 6px;
+    font-size: 12px;
 }
 
 .navbar-brand > img {
@@ -240,7 +242,7 @@ hr {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
     color: #fff;
-    background-color: #7bb661;
+    background-color: #619949;
     border-radius: 3px;
     padding: 8px 25px 8px 20px;
 }
@@ -249,21 +251,21 @@ hr {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     color: #fff;
-    background-color: #7bb661;
+    background-color: #ffffe0;
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
     color: #fff;
-    background-color: #7bb661;
+    background-color: #accc9f;
 }
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
     color: #262626;
     text-decoration: none;
-    background-color: #7bb661;
+    background-color: #619949;
 }
 
 .navbar-nav > li > .dropdown-menu {
@@ -286,7 +288,7 @@ hr {
     text-align: left;
     list-style: none;
     color: black;
-    background-color: #7bb661;
+    background-color: #fff;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 1px solid #ccc;
@@ -316,7 +318,7 @@ hr {
   font-size: 40px;
   font-weight: bold;
   color: #1a2b1a;
-  font-family: "FontAwesome";
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
 .button0239-item {
@@ -377,7 +379,7 @@ hr {
     font-size: 14px;
     line-height: 1.42857143;
     color: #000;
-    background-color: #7bb661;
+    background-color: #fff;
     background-image: none;
     border: #7bb661;
     border-radius: none;
@@ -439,8 +441,9 @@ hr {
 
 .welcome-demop102 .topbar-title {
     margin-top: 20px;
-    margin-left: 5px;
+    margin-left: 4px;
     font-size: 15px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 .text-center {
 text-align: center;
@@ -706,6 +709,7 @@ padding: 6px 15px;
     min-width: 320px;
     margin-top: 30px;
     background: #F3F3F3;
+    border-radius: 15px;
 }
 
 #main {
@@ -974,6 +978,7 @@ padding: 6px 15px;
     padding: 15px;
     margin-top: 30px;
     box-shadow: 0px 0px 13px -3px;
+    border-radius: 10px;
 }
 
 .tags-part2398 h4 {
