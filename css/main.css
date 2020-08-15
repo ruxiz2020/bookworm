@@ -23,7 +23,7 @@ body {
     font-weight: normal;
     line-height: 1.5;
     color: #292b2c;
-    background-color: #D0F0C0;
+    background-color: #75c275;
     box-sizing: border-box;
     min-height: calc(100% - 3.5rem);
     height: calc(100% - 3.5rem);
@@ -307,28 +307,9 @@ hr {
     font-family: serif;
 }
 
-.welcome-part-one {
-    background-color: #7bb661;
-    padding-top: 51px;
-    margin-top: -20px;
-    padding-bottom: 35px;
-}
-
-.welcome-demop102 h2 {
-    font-size: 30px;
-    font-weight: bold;
-    color: #1a2b1a;
-    font-family: "FontAwesome";
-}
-
-.welcome-demop102 p {
-    font-size: 20px;
-    color: #fff;
-    font-family: "FontAwesome";
-    margin-top: 30px;
-}
-
 .main_title {
+  font-size: 40px;
+  font-weight: bold;
   color: #1a2b1a;
   font-family: "FontAwesome";
 }
@@ -453,6 +434,8 @@ hr {
 
 .welcome-demop102 .topbar-title {
     margin-top: 20px;
+    margin-left: 5px;
+    font-size: 15px;
 }
 .text-center {
 text-align: center;
