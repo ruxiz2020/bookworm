@@ -23,7 +23,7 @@ body {
     font-weight: normal;
     line-height: 1.5;
     color: #292b2c;
-    background-color: #75c275;
+    background-color: #fff;
     box-sizing: border-box;
     min-height: calc(100% - 3.5rem);
     height: calc(100% - 3.5rem);
@@ -285,7 +285,8 @@ hr {
     font-size: 14px;
     text-align: left;
     list-style: none;
-    background-color: #fff;
+    color: black;
+    background-color: #7bb661;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     border: 1px solid #ccc;
@@ -305,6 +306,10 @@ hr {
     color: #333;
     white-space: nowrap;
     font-family: serif;
+}
+
+.dropdown-form {
+  color: #FFFFE0;
 }
 
 .main_title {
@@ -372,7 +377,7 @@ hr {
     font-size: 14px;
     line-height: 1.42857143;
     color: #000;
-    background-color: #fff;
+    background-color: #7bb661;
     background-image: none;
     border: #7bb661;
     border-radius: none;
@@ -816,7 +821,7 @@ padding: 6px 15px;
     font-size: 40px;
     margin-top: 10px;
     padding-left: 5px;
-    color: green;
+    color: #7bb661;
 }
 
 .left-user12923 .fa-times {
@@ -900,7 +905,7 @@ padding: 6px 15px;
 }
 
 .ques-icon-info3293 .fa-check {
-    color: green;
+    color: #7bb661;
 }
 
 .ques-icon-info3293 .fa-star {
