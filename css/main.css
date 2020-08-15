@@ -317,7 +317,7 @@ hr {
 .welcome-demop102 h2 {
     font-size: 30px;
     font-weight: bold;
-    color: #fff;
+    color: #1a2b1a;
     font-family: "FontAwesome";
 }
 
@@ -326,6 +326,11 @@ hr {
     color: #fff;
     font-family: "FontAwesome";
     margin-top: 30px;
+}
+
+.main_title {
+  color: #1a2b1a;
+  font-family: "FontAwesome";
 }
 
 .button0239-item {
@@ -446,19 +451,13 @@ hr {
     margin-top: 30px;
 }
 
-.topbar-title {
-    margin-top: 1rem;
-    margin-left: 2rem;
-    font-weight: 500;
-    font-size: 18px;
-    color: green;
+.welcome-demop102 .topbar-title {
+    margin-top: 20px;
 }
-.main_title {
-  color: black;
-  margin-bottom: 2rem;
-  font-weight: 800;
-  font-size: 38px;
+.text-center {
+text-align: center;
 }
+
 /*--======= welcome section on top background=====-->*/
 
 
@@ -475,69 +474,6 @@ hr {
 
 /* Page End */
 
-
-/* container */
-.container {
-    position: relative;
-    align-item: center;
-    width: 1500px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-@media (min-width: 576px) {
-    .container {
-        padding-right: 15px;
-        padding-left: 15px;
-        width: 540px;
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        padding-right: 15px;
-        padding-left: 15px;
-        width: 720px;
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        padding-right: 15px;
-        padding-left: 15px;
-        width: 960px;
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        padding-right: 15px;
-        padding-left: 15px;
-        width: 1140px;
-        max-width: 100%;
-    }
-}
-
-.container-fluid {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    width: 100%;
-}
-
-.container-title {
-    font-color: black;
-    position: relative;
-    margin-left: 60px;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-/* container */
 
 /* row */
 /* this make row width within page*/
