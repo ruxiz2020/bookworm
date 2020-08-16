@@ -7,15 +7,22 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bookworm</title>
 
-  <!-- main stylesheet -->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/users.css">
+
   <!-- Font Awesome Icon stylesheet -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <!-- main stylesheet -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/users.css">
   <link href="css/animate.css" rel="stylesheet" type="text/css">
   <link href="css/responsive.css" rel="stylesheet" type="text/css">
 
+  <!--javascript chart does not work when I put it at the end of file -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <script src="js/chartjs/Chart.min.js"></script>
+  <script src="js/dashboard.js"></script>
 </head>
 
 <body>
@@ -100,20 +107,11 @@
 
 
     <!--======= welcome section on top background=====-->
-    <section class="welcome-part-one">
+    <section class="user-welcome-part-one">
         <div class="container">
             <div class="welcome-demop102 text-center">
-                <h1 class="main_title" >Bookworm</h1>
-                <div class="topbar">
-                  <span style="color:#4682B4;" class="topbar-title">Read </span>
-                  <span style="color:#FFB6C1;" class="topbar-title">Write</span>
-                  <span style="color:#DEB887;" class="topbar-title">Enjoy</span>
-                  <span style="color:#FF8C00;" class="topbar-title">Think</span>
-                  <span style="color:#8FBC8F;" class="topbar-title">Create</span>
-                  <span style="color:#708090;" class="topbar-title">Share</span>
-                  <span style="color:#FF6347;" class="topbar-title">Meet</span>
-                  <span style="color:#8B4513;" class="topbar-title">Inspire</span>
-                </div>
+                <h1 class="main_title" >Users</h1>
+
                 <div class="button0239-item">
                     <a href="#">
                         <button type="button" class="aboutus022">Log In</button>
@@ -134,7 +132,24 @@
 
 
         <div class="container">
+          <h3>User Statistics</h3>
           <div class="row">
+
+            <div class="col-md-7">
+                    <div class="card ">
+                        <div class="card-body">
+                            <canvas id="canvas" class="h-300"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card bg-dark">
+                        <div class="card-body">
+                            <canvas id="pieChart" class="h-300"></canvas>
+                        </div>
+                    </div>
+                </div>
+
             <div class="col-md-11 user-profile328903">
               <div class="about-user2039">
                 <div class="row">
@@ -152,9 +167,6 @@
                           <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                           <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                           <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                           <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                         </span> </p>
                     </div>
@@ -177,9 +189,6 @@
                           <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                           <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                           <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                           <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                         </span> </p>
                     </div>
@@ -189,19 +198,18 @@
 
             </div>
             <!--                end of col-md-9 -->
+
+
+
+
           </div>
         </div>
         <!--                end of container -->
 
+
   </div>
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <!-- banner animation -->
-  <script type="text/javascript" src="js/modernizr.custom.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/jquery-3.1.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>

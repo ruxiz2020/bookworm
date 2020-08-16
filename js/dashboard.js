@@ -14,49 +14,49 @@ window.chartColors = {
 
 
 var chartData = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
     datasets: [{
         type: 'line',
-        label: 'Dataset 1',
+        label: 'User Logged in',
         borderColor: window.chartColors.blue,
         borderWidth: 2,
         fill: false,
         data: [
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor()
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
         ]
     }, {
         type: 'bar',
-        label: 'Dataset 2',
-        backgroundColor: window.chartColors.red,
+        label: 'User Posted',
+        backgroundColor: window.chartColors.yellow,
         data: [
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor()
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
         ],
         borderColor: 'white',
         borderWidth: 2
     }, {
         type: 'bar',
-        label: 'Dataset 3',
+        label: 'User Joined',
         backgroundColor: window.chartColors.green,
         data: [
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor(),
-            randomScalingFactor()
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
+            Math.abs(randomScalingFactor()),
         ]
     }]
 };
@@ -66,14 +66,14 @@ var config = {
     type: 'radar',
     data: {
         labels: [
-            ['Eating', 'Dinner'],
-            ['Drinking', 'Water'], 'Sleeping', ['Designing', 'Graphics'], 'Coding', 'Cycling', 'Running'
+            ['Watching', 'Movies'],
+            ['Listening to', 'Music'], 'Reading', ['Designing', 'Graphics'], 'Coding', 'Cycling', 'Running'
         ],
         datasets: [{
-            label: 'My First dataset',
-            backgroundColor: color(window.chartColors.red).alpha(0.2).rgbString(),
-            borderColor: window.chartColors.red,
-            pointBackgroundColor: window.chartColors.red,
+            label: 'John',
+            backgroundColor: color(window.chartColors.orange).alpha(0.2).rgbString(),
+            borderColor: window.chartColors.orange,
+            pointBackgroundColor: window.chartColors.orange,
             data: [
                 randomScalingFactor(),
                 randomScalingFactor(),
@@ -84,7 +84,7 @@ var config = {
                 randomScalingFactor()
             ]
         }, {
-            label: 'My Second dataset',
+            label: 'Amy',
             backgroundColor: color(window.chartColors.blue).alpha(0.2).rgbString(),
             borderColor: window.chartColors.blue,
             pointBackgroundColor: window.chartColors.blue,
@@ -111,7 +111,7 @@ var config = {
         title: {
             display: true,
             fontColor: '#f0f0f0',
-            text: 'Sales'
+            text: 'User Hobbies Pie Chart'
         },
         scale: {
             angleLines:{
@@ -142,7 +142,7 @@ $(document).ready(function () {
             responsive: true,
             title: {
                 display: true,
-                text: 'Combo Bar Line Chart'
+                text: 'User Statistics Bar Chart'
             },
             tooltips: {
                 mode: 'index',
